@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6B1E9E868E005600CF /* AppDelegate.swift */; };
+		7371DC6E1E9E868E005600CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6D1E9E868E005600CF /* ViewController.swift */; };
+		7371DC711E9E868E005600CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC6F1E9E868E005600CF /* Main.storyboard */; };
+		7371DC731E9E868E005600CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC721E9E868E005600CF /* Assets.xcassets */; };
+		7371DC761E9E868E005600CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC741E9E868E005600CF /* LaunchScreen.storyboard */; };
+		7371DC811E9E868E005600CF /* NWKTC_app_prototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC801E9E868E005600CF /* NWKTC_app_prototypeTests.swift */; };
+		7371DC8C1E9E868E005600CF /* NWKTC_app_prototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC8B1E9E868E005600CF /* NWKTC_app_prototypeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7371DC7D1E9E868E005600CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7371DC601E9E868E005600CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7371DC671E9E868E005600CF;
+			remoteInfo = "NWKTC app prototype";
+		};
+		7371DC881E9E868E005600CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7371DC601E9E868E005600CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7371DC671E9E868E005600CF;
+			remoteInfo = "NWKTC app prototype";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7371DC681E9E868E005600CF /* NWKTC app prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NWKTC app prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7371DC6B1E9E868E005600CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7371DC6D1E9E868E005600CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7371DC701E9E868E005600CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7371DC721E9E868E005600CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7371DC751E9E868E005600CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7371DC771E9E868E005600CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7371DC7C1E9E868E005600CF /* NWKTC app prototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NWKTC app prototypeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7371DC801E9E868E005600CF /* NWKTC_app_prototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWKTC_app_prototypeTests.swift; sourceTree = "<group>"; };
+		7371DC821E9E868E005600CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7371DC871E9E868E005600CF /* NWKTC app prototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NWKTC app prototypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7371DC8B1E9E868E005600CF /* NWKTC_app_prototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWKTC_app_prototypeUITests.swift; sourceTree = "<group>"; };
+		7371DC8D1E9E868E005600CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7371DC651E9E868E005600CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7371DC791E9E868E005600CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7371DC841E9E868E005600CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7371DC5F1E9E868E005600CF = {
+			isa = PBXGroup;
+			children = (
+				7371DC6A1E9E868E005600CF /* NWKTC app prototype */,
+				7371DC7F1E9E868E005600CF /* NWKTC app prototypeTests */,
+				7371DC8A1E9E868E005600CF /* NWKTC app prototypeUITests */,
+				7371DC691E9E868E005600CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7371DC691E9E868E005600CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7371DC681E9E868E005600CF /* NWKTC app prototype.app */,
+				7371DC7C1E9E868E005600CF /* NWKTC app prototypeTests.xctest */,
+				7371DC871E9E868E005600CF /* NWKTC app prototypeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7371DC6A1E9E868E005600CF /* NWKTC app prototype */ = {
+			isa = PBXGroup;
+			children = (
+				7371DC6B1E9E868E005600CF /* AppDelegate.swift */,
+				7371DC6D1E9E868E005600CF /* ViewController.swift */,
+				7371DC6F1E9E868E005600CF /* Main.storyboard */,
+				7371DC721E9E868E005600CF /* Assets.xcassets */,
+				7371DC741E9E868E005600CF /* LaunchScreen.storyboard */,
+				7371DC771E9E868E005600CF /* Info.plist */,
+			);
+			path = "NWKTC app prototype";
+			sourceTree = "<group>";
+		};
+		7371DC7F1E9E868E005600CF /* NWKTC app prototypeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7371DC801E9E868E005600CF /* NWKTC_app_prototypeTests.swift */,
+				7371DC821E9E868E005600CF /* Info.plist */,
+			);
+			path = "NWKTC app prototypeTests";
+			sourceTree = "<group>";
+		};
+		7371DC8A1E9E868E005600CF /* NWKTC app prototypeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7371DC8B1E9E868E005600CF /* NWKTC_app_prototypeUITests.swift */,
+				7371DC8D1E9E868E005600CF /* Info.plist */,
+			);
+			path = "NWKTC app prototypeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7371DC671E9E868E005600CF /* NWKTC app prototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7371DC901E9E868E005600CF /* Build configuration list for PBXNativeTarget "NWKTC app prototype" */;
+			buildPhases = (
+				7371DC641E9E868E005600CF /* Sources */,
+				7371DC651E9E868E005600CF /* Frameworks */,
+				7371DC661E9E868E005600CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NWKTC app prototype";
+			productName = "NWKTC app prototype";
+			productReference = 7371DC681E9E868E005600CF /* NWKTC app prototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7371DC7B1E9E868E005600CF /* NWKTC app prototypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7371DC931E9E868E005600CF /* Build configuration list for PBXNativeTarget "NWKTC app prototypeTests" */;
+			buildPhases = (
+				7371DC781E9E868E005600CF /* Sources */,
+				7371DC791E9E868E005600CF /* Frameworks */,
+				7371DC7A1E9E868E005600CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7371DC7E1E9E868E005600CF /* PBXTargetDependency */,
+			);
+			name = "NWKTC app prototypeTests";
+			productName = "NWKTC app prototypeTests";
+			productReference = 7371DC7C1E9E868E005600CF /* NWKTC app prototypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7371DC861E9E868E005600CF /* NWKTC app prototypeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7371DC961E9E868E005600CF /* Build configuration list for PBXNativeTarget "NWKTC app prototypeUITests" */;
+			buildPhases = (
+				7371DC831E9E868E005600CF /* Sources */,
+				7371DC841E9E868E005600CF /* Frameworks */,
+				7371DC851E9E868E005600CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7371DC891E9E868E005600CF /* PBXTargetDependency */,
+			);
+			name = "NWKTC app prototypeUITests";
+			productName = "NWKTC app prototypeUITests";
+			productReference = 7371DC871E9E868E005600CF /* NWKTC app prototypeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7371DC601E9E868E005600CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Parker Erikson";
+				TargetAttributes = {
+					7371DC671E9E868E005600CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7AF2P6S86E;
+						ProvisioningStyle = Automatic;
+					};
+					7371DC7B1E9E868E005600CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7AF2P6S86E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7371DC671E9E868E005600CF;
+					};
+					7371DC861E9E868E005600CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7AF2P6S86E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7371DC671E9E868E005600CF;
+					};
+				};
+			};
+			buildConfigurationList = 7371DC631E9E868E005600CF /* Build configuration list for PBXProject "NWKTC app prototype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7371DC5F1E9E868E005600CF;
+			productRefGroup = 7371DC691E9E868E005600CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7371DC671E9E868E005600CF /* NWKTC app prototype */,
+				7371DC7B1E9E868E005600CF /* NWKTC app prototypeTests */,
+				7371DC861E9E868E005600CF /* NWKTC app prototypeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7371DC661E9E868E005600CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7371DC761E9E868E005600CF /* LaunchScreen.storyboard in Resources */,
+				7371DC731E9E868E005600CF /* Assets.xcassets in Resources */,
+				7371DC711E9E868E005600CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7371DC7A1E9E868E005600CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7371DC851E9E868E005600CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7371DC641E9E868E005600CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7371DC6E1E9E868E005600CF /* ViewController.swift in Sources */,
+				7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7371DC781E9E868E005600CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7371DC811E9E868E005600CF /* NWKTC_app_prototypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7371DC831E9E868E005600CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7371DC8C1E9E868E005600CF /* NWKTC_app_prototypeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7371DC7E1E9E868E005600CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7371DC671E9E868E005600CF /* NWKTC app prototype */;
+			targetProxy = 7371DC7D1E9E868E005600CF /* PBXContainerItemProxy */;
+		};
+		7371DC891E9E868E005600CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7371DC671E9E868E005600CF /* NWKTC app prototype */;
+			targetProxy = 7371DC881E9E868E005600CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7371DC6F1E9E868E005600CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7371DC701E9E868E005600CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7371DC741E9E868E005600CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7371DC751E9E868E005600CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7371DC8E1E9E868E005600CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7371DC8F1E9E868E005600CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7371DC911E9E868E005600CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7AF2P6S86E;
+				INFOPLIST_FILE = "NWKTC app prototype/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Northwest-Tech.NWKTC-app-prototype";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7371DC921E9E868E005600CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7AF2P6S86E;
+				INFOPLIST_FILE = "NWKTC app prototype/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Northwest-Tech.NWKTC-app-prototype";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7371DC941E9E868E005600CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7AF2P6S86E;
+				INFOPLIST_FILE = "NWKTC app prototypeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Northwest-Tech.NWKTC-app-prototypeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NWKTC app prototype.app/NWKTC app prototype";
+			};
+			name = Debug;
+		};
+		7371DC951E9E868E005600CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7AF2P6S86E;
+				INFOPLIST_FILE = "NWKTC app prototypeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Northwest-Tech.NWKTC-app-prototypeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NWKTC app prototype.app/NWKTC app prototype";
+			};
+			name = Release;
+		};
+		7371DC971E9E868E005600CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7AF2P6S86E;
+				INFOPLIST_FILE = "NWKTC app prototypeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Northwest-Tech.NWKTC-app-prototypeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "NWKTC app prototype";
+			};
+			name = Debug;
+		};
+		7371DC981E9E868E005600CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7AF2P6S86E;
+				INFOPLIST_FILE = "NWKTC app prototypeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Northwest-Tech.NWKTC-app-prototypeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "NWKTC app prototype";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7371DC631E9E868E005600CF /* Build configuration list for PBXProject "NWKTC app prototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7371DC8E1E9E868E005600CF /* Debug */,
+				7371DC8F1E9E868E005600CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7371DC901E9E868E005600CF /* Build configuration list for PBXNativeTarget "NWKTC app prototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7371DC911E9E868E005600CF /* Debug */,
+				7371DC921E9E868E005600CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7371DC931E9E868E005600CF /* Build configuration list for PBXNativeTarget "NWKTC app prototypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7371DC941E9E868E005600CF /* Debug */,
+				7371DC951E9E868E005600CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7371DC961E9E868E005600CF /* Build configuration list for PBXNativeTarget "NWKTC app prototypeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7371DC971E9E868E005600CF /* Debug */,
+				7371DC981E9E868E005600CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7371DC601E9E868E005600CF /* Project object */;
+}
