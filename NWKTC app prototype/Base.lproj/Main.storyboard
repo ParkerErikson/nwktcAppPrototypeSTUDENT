@@ -66,9 +66,6 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="9v2-Y6-F8I" kind="show" id="UTC-mL-GGK"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313725490198" green="0.066666666666666666" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,7 +92,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7K-UV-ajU">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="47"/>
+                                <rect key="frame" x="0.0" y="21" width="128" height="47"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="JhO-CZ-A1p"/>
@@ -146,7 +143,7 @@
                             <constraint firstItem="9pE-Up-B3I" firstAttribute="top" secondItem="ALP-ZT-d9u" secondAttribute="bottom" constant="85" id="TXN-BV-MUH"/>
                             <constraint firstItem="V7K-UV-ajU" firstAttribute="leading" secondItem="fjo-lu-mOd" secondAttribute="leading" id="a4D-0Q-VDz"/>
                             <constraint firstItem="9pE-Up-B3I" firstAttribute="centerX" secondItem="fjo-lu-mOd" secondAttribute="centerX" id="gSq-xN-Vbi"/>
-                            <constraint firstItem="V7K-UV-ajU" firstAttribute="top" secondItem="fjo-lu-mOd" secondAttribute="top" id="q60-mI-ynZ"/>
+                            <constraint firstItem="V7K-UV-ajU" firstAttribute="top" secondItem="fjo-lu-mOd" secondAttribute="top" constant="21" id="q60-mI-ynZ"/>
                             <constraint firstItem="9pE-Up-B3I" firstAttribute="trailing" secondItem="ALP-ZT-d9u" secondAttribute="trailing" id="r69-U6-teB"/>
                             <constraint firstItem="1R6-po-Wei" firstAttribute="top" secondItem="9pE-Up-B3I" secondAttribute="bottom" constant="27" id="zyQ-iM-lKG"/>
                         </constraints>
