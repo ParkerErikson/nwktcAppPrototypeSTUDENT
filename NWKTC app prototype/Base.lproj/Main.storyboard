@@ -71,7 +71,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.74509805439999999" green="0.15686275059999999" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80784313725490198" green="0.066666666666666666" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BRT-AQ-jcI" secondAttribute="trailing" id="IoF-3W-qk6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BRT-AQ-jcI" secondAttribute="bottom" id="UM1-IZ-zYB"/>
@@ -138,7 +138,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="alert"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.74509805439999999" green="0.15686275059999999" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80784313725490198" green="0.066666666666666666" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9pE-Up-B3I" firstAttribute="leading" secondItem="ALP-ZT-d9u" secondAttribute="leading" id="5yh-B1-Plr"/>
                             <constraint firstItem="9pE-Up-B3I" firstAttribute="top" secondItem="fjo-lu-mOd" secondAttribute="top" constant="256" id="6Jx-NL-fjn"/>
@@ -154,12 +154,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8i6-ug-mZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="715"/>
+            <point key="canvasLocation" x="26" y="690"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CzB-yb-u9v">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pq3-Hn-Mth" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9v2-Y6-F8I" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cLU-SV-jce"/>
@@ -178,7 +177,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WZK-ag-DWa" id="hkl-cF-w6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -200,7 +199,7 @@
                                         <rect key="frame" x="0.0" y="28" width="520" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v67-Fy-h1x" id="hWV-4y-Ar0">
-                                            <rect key="frame" x="0.0" y="0.0" width="520" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="520" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -225,11 +224,12 @@
                                 <state key="normal" title="Logout"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cyan="0.0" magenta="1" yellow="1" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="backgroundColor" red="0.80784313725490198" green="0.066666666666666666" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pq3-Hn-Mth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989" y="62"/>
+            <point key="canvasLocation" x="713" y="40"/>
         </scene>
     </scenes>
     <resources>
