@@ -867,6 +867,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8J8-MA-2hb" kind="show" id="OWm-4n-hAN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -930,9 +933,12 @@
                                     <constraint firstAttribute="width" constant="240" id="50V-I3-tga"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Cancle">
+                                <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="iO9-AA-Kns" kind="show" id="BXO-Ay-Z5F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzo-g8-Eq1">
                                 <rect key="frame" x="263" y="965" width="240" height="50"/>
@@ -959,7 +965,7 @@
                                         <rect key="frame" x="0.0" y="28" width="750" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8D7-0c-Dxw" id="REP-O1-Sjd">
-                                            <rect key="frame" x="0.0" y="0.0" width="750" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="750" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asd-Oz-I4W">
@@ -1025,9 +1031,10 @@
         <image name="nwktc" width="376" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hVB-N3-2Pd"/>
         <segue reference="jdh-vd-P3X"/>
         <segue reference="2xl-nX-W3N"/>
-        <segue reference="hVB-N3-2Pd"/>
+        <segue reference="BXO-Ay-Z5F"/>
         <segue reference="sMd-EQ-zKi"/>
     </inferredMetricsTieBreakers>
 </document>
