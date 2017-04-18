@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6B1E9E868E005600CF /* AppDelegate.swift */; };
 		7371DC6E1E9E868E005600CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6D1E9E868E005600CF /* ViewController.swift */; };
-		7371DC711E9E868E005600CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC6F1E9E868E005600CF /* Main.storyboard */; };
 		7371DC731E9E868E005600CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC721E9E868E005600CF /* Assets.xcassets */; };
 		7371DC761E9E868E005600CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC741E9E868E005600CF /* LaunchScreen.storyboard */; };
 		7371DC811E9E868E005600CF /* NWKTC_app_prototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC801E9E868E005600CF /* NWKTC_app_prototypeTests.swift */; };
@@ -37,7 +36,6 @@
 		7371DC681E9E868E005600CF /* NWKTC app prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NWKTC app prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7371DC6B1E9E868E005600CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7371DC6D1E9E868E005600CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7371DC701E9E868E005600CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7371DC721E9E868E005600CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7371DC751E9E868E005600CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7371DC771E9E868E005600CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				7371DC6B1E9E868E005600CF /* AppDelegate.swift */,
 				7371DC6D1E9E868E005600CF /* ViewController.swift */,
-				7371DC6F1E9E868E005600CF /* Main.storyboard */,
 				7371DC721E9E868E005600CF /* Assets.xcassets */,
 				7371DC741E9E868E005600CF /* LaunchScreen.storyboard */,
 				7371DC771E9E868E005600CF /* Info.plist */,
@@ -237,7 +234,6 @@
 			files = (
 				7371DC761E9E868E005600CF /* LaunchScreen.storyboard in Resources */,
 				7371DC731E9E868E005600CF /* Assets.xcassets in Resources */,
-				7371DC711E9E868E005600CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +295,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7371DC6F1E9E868E005600CF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7371DC701E9E868E005600CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7371DC741E9E868E005600CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -514,6 +502,7 @@
 				7371DC921E9E868E005600CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7371DC931E9E868E005600CF /* Build configuration list for PBXNativeTarget "NWKTC app prototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +511,7 @@
 				7371DC951E9E868E005600CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7371DC961E9E868E005600CF /* Build configuration list for PBXNativeTarget "NWKTC app prototypeUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +520,7 @@
 				7371DC981E9E868E005600CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
