@@ -186,7 +186,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WZK-ag-DWa" id="hkl-cF-w6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Hamburger&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-7F-s4M">
@@ -270,6 +270,9 @@
                                 <state key="normal" title="My Account">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8J8-MA-2hb" kind="show" action="showDetailViewController:sender:" id="oor-NT-qYJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJg-xZ-67N">
                                 <rect key="frame" x="0.0" y="28" width="768" height="41"/>
@@ -862,9 +865,6 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="8J8-MA-2hb" kind="show" id="OWm-4n-hAN"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -932,7 +932,7 @@
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="iO9-AA-Kns" kind="show" id="BXO-Ay-Z5F"/>
+                                    <segue destination="9v2-Y6-F8I" kind="show" id="Pjw-YC-e7D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzo-g8-Eq1">
@@ -1026,9 +1026,8 @@
         <image name="nwktc" width="376" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NNW-Ki-uNr"/>
-        <segue reference="XSa-M5-ph4"/>
+        <segue reference="MZs-Lp-fzg"/>
+        <segue reference="Pjw-YC-e7D"/>
         <segue reference="cDs-W4-NOk"/>
-        <segue reference="bUz-j7-StC"/>
     </inferredMetricsTieBreakers>
 </document>
