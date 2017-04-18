@@ -1046,8 +1046,8 @@
         <image name="nwktc" width="376" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NNW-Ki-uNr"/>
-        <segue reference="Pjw-YC-e7D"/>
+        <segue reference="Bh3-FU-qop"/>
         <segue reference="cDs-W4-NOk"/>
+        <segue reference="NNW-Ki-uNr"/>
     </inferredMetricsTieBreakers>
 </document>
