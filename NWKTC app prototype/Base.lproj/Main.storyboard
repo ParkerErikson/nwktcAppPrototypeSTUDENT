@@ -180,13 +180,13 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ptx-iC-QFJ">
                                 <rect key="frame" x="8" y="105" width="240" height="850"/>
-                                <color key="backgroundColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nwktcCell" rowHeight="150" id="WZK-ag-DWa">
                                         <rect key="frame" x="0.0" y="28" width="240" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WZK-ag-DWa" id="hkl-cF-w6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Hamburger&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-7F-s4M">
@@ -194,7 +194,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <color key="textColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -203,7 +203,7 @@
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5hv-mX-4kI">
                                 <rect key="frame" x="264" y="105" width="496" height="850"/>
-                                <color key="backgroundColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="v67-Fy-h1x">
                                         <rect key="frame" x="0.0" y="28" width="496" height="150"/>
@@ -283,7 +283,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="m9S-tc-1gt" kind="show" id="Qzh-mS-3Cd"/>
+                                    <segue destination="g2D-Zx-xiw" kind="show" id="NNW-Ki-uNr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -322,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pq3-Hn-Mth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="690"/>
+            <point key="canvasLocation" x="663" y="690"/>
         </scene>
         <!--Ticket/Complaint-->
         <scene sceneID="4Vb-fv-4mt">
@@ -476,7 +476,7 @@
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9v2-Y6-F8I" kind="show" id="hVB-N3-2Pd"/>
+                                    <segue destination="g2D-Zx-xiw" kind="show" id="Lct-Kc-l9m"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Info." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-Nc-2yz">
@@ -500,14 +500,6 @@
                                 <state key="normal" title="Mic.">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OON-yX-Lps">
-                                <rect key="frame" x="334" y="86" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="g2D-Zx-xiw" kind="show" id="2xl-nX-W3N"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313725490198" green="0.066666666666666666" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -578,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCi-9I-PSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1482" y="690"/>
+            <point key="canvasLocation" x="1313" y="1362"/>
         </scene>
         <!--Selected Stuff-->
         <scene sceneID="cqK-Yi-mgR">
@@ -657,10 +649,13 @@
                                 <state key="normal" title="Ticket">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="m9S-tc-1gt" kind="show" id="hjD-jS-gbf"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3ru-tN-6eJ">
                                 <rect key="frame" x="20" y="393" width="728" height="553"/>
-                                <color key="backgroundColor" red="0.05178238659" green="0.0039215688589999999" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="553" id="Wao-Rz-Hmp"/>
                                     <constraint firstAttribute="width" constant="728" id="ofa-Ou-laS"/>
@@ -677,9 +672,6 @@
                                 <state key="normal" title="Like">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="iO9-AA-Kns" kind="show" id="ds4-ev-FKO"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJ2-LB-Hvq">
                                 <rect key="frame" x="20" y="966" width="240" height="50"/>
@@ -693,13 +685,16 @@
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="m9S-tc-1gt" kind="show" id="jdh-vd-P3X"/>
+                                    <segue destination="9v2-Y6-F8I" kind="show" id="XSa-M5-ph4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDn-GC-F64">
                                 <rect key="frame" x="382" y="976" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="iO9-AA-Kns" kind="show" id="bUz-j7-StC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -744,7 +739,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3j-hB-nsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="690"/>
+            <point key="canvasLocation" x="1313" y="690"/>
         </scene>
         <!--Contact-->
         <scene sceneID="d8e-kR-ynW">
@@ -900,7 +895,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g4-7l-h6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2763" y="690"/>
+            <point key="canvasLocation" x="1999" y="690"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JMI-qb-pU7">
@@ -1023,7 +1018,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6O-gr-U4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3398.4375" y="667.96875"/>
+            <point key="canvasLocation" x="2692" y="690"/>
         </scene>
     </scenes>
     <resources>
@@ -1031,10 +1026,9 @@
         <image name="nwktc" width="376" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="NNW-Ki-uNr"/>
+        <segue reference="XSa-M5-ph4"/>
         <segue reference="cDs-W4-NOk"/>
-        <segue reference="hVB-N3-2Pd"/>
-        <segue reference="Qzh-mS-3Cd"/>
-        <segue reference="2xl-nX-W3N"/>
-        <segue reference="BXO-Ay-Z5F"/>
+        <segue reference="bUz-j7-StC"/>
     </inferredMetricsTieBreakers>
 </document>
