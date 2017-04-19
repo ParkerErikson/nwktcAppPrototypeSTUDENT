@@ -13,7 +13,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="NWKTC_app_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="LoginScreen" customModule="NWKTC_app_prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -60,6 +60,7 @@
                                             <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRO-Fb-0qb"/>
                                             <segue destination="9v2-Y6-F8I" kind="show" id="HSn-TS-l55"/>
                                         </connections>
                                     </button>
@@ -86,6 +87,11 @@
                             <constraint firstAttribute="trailing" secondItem="BRT-AQ-jcI" secondAttribute="trailing" id="jd7-d0-ASX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginOutlet" destination="moE-39-yDq" id="Drw-dZ-QcY"/>
+                        <outlet property="password" destination="ito-UB-h9j" id="rZf-2w-slp"/>
+                        <outlet property="username" destination="c9v-hZ-iI6" id="uan-90-hRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8i6-ug-mZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,7 +100,7 @@
         <!--SilentWitness-->
         <scene sceneID="NYW-k2-Yqp">
             <objects>
-                <viewController title="SilentWitness" id="0AX-1E-trg" sceneMemberID="viewController">
+                <viewController title="SilentWitness" id="0AX-1E-trg" customClass="SilentWitness" customModule="NWKTC_app_prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kTh-YL-Ct9"/>
                         <viewControllerLayoutGuide type="bottom" id="o2G-z2-j4F"/>
@@ -113,6 +119,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit:" destination="0AX-1E-trg" eventType="touchUpInside" id="KbX-t1-We9"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9pE-Up-B3I">
                                 <rect key="frame" x="239" y="316" width="290" height="400"/>
@@ -158,6 +167,10 @@
                             <constraint firstItem="1R6-po-Wei" firstAttribute="centerX" secondItem="9pE-Up-B3I" secondAttribute="centerX" id="w4Y-Kk-Xh2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="silentConfession" destination="9pE-Up-B3I" id="7Us-1P-TtY"/>
+                        <outlet property="submitOutlet" destination="1R6-po-Wei" id="wgB-gt-Q08"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnA-BH-Buy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,7 +196,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WZK-ag-DWa" id="hkl-cF-w6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Apps and Gaming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-7F-s4M">
@@ -206,7 +219,7 @@
                                         <rect key="frame" x="0.0" y="28" width="496" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v67-Fy-h1x" id="hWV-4y-Ar0">
-                                            <rect key="frame" x="0.0" y="0.0" width="496" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="496" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Events/Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGu-DH-Dpr">
@@ -694,7 +707,7 @@
                                         <rect key="frame" x="0.0" y="28" width="496" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tni-nY-K1z" id="hs6-t3-EnB">
-                                            <rect key="frame" x="0.0" y="0.0" width="496" height="299.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="496" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Apps and Gaming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-fK-70H">
@@ -754,7 +767,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zkv-UA-3VI">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Department" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKR-fo-N4U">
@@ -855,7 +868,7 @@
                                         <rect key="frame" x="0.0" y="28" width="750" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8D7-0c-Dxw" id="REP-O1-Sjd">
-                                            <rect key="frame" x="0.0" y="0.0" width="750" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="750" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Profile, font size, darkness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asd-Oz-I4W">
@@ -921,8 +934,8 @@
         <image name="nwktc" width="376" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Se-hL-4aQ"/>
-        <segue reference="CY6-01-YWm"/>
+        <segue reference="HSn-TS-l55"/>
+        <segue reference="flR-2S-0es"/>
         <segue reference="HTs-rD-adC"/>
     </inferredMetricsTieBreakers>
 </document>
