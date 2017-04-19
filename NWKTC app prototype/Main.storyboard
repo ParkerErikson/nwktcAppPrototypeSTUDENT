@@ -166,7 +166,7 @@
         <!--Home-->
         <scene sceneID="CzB-yb-u9v">
             <objects>
-                <viewController title="Home" id="9v2-Y6-F8I" sceneMemberID="viewController">
+                <viewController title="Home" id="9v2-Y6-F8I" customClass="HomeViewController" customModule="NWKTC_app_prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cLU-SV-jce"/>
                         <viewControllerLayoutGuide type="bottom" id="A4C-Xn-hzc"/>
@@ -175,18 +175,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ptx-iC-QFJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ptx-iC-QFJ">
                                 <rect key="frame" x="8" y="105" width="240" height="850"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nwktcCell" rowHeight="50" id="WZK-ag-DWa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sectionCell" rowHeight="50" id="WZK-ag-DWa">
                                         <rect key="frame" x="0.0" y="28" width="240" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WZK-ag-DWa" id="hkl-cF-w6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Apps and Gaming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-7F-s4M">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-7F-s4M">
                                                     <rect key="frame" x="8" y="-1" width="224" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -197,6 +197,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9v2-Y6-F8I" id="Bzg-VU-Uj7"/>
+                                    <outlet property="delegate" destination="9v2-Y6-F8I" id="X20-DM-8DA"/>
+                                </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5hv-mX-4kI">
                                 <rect key="frame" x="264" y="105" width="496" height="850"/>
@@ -228,9 +232,6 @@
                                 <state key="normal" title="Help">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="iO9-AA-Kns" kind="show" id="F4K-sR-0xq"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0J2-7E-P2H">
                                 <rect key="frame" x="520" y="963" width="240" height="50"/>
@@ -313,7 +314,7 @@
         <!--Ticket/Complaint-->
         <scene sceneID="4Vb-fv-4mt">
             <objects>
-                <viewController title="Ticket/Complaint" id="m9S-tc-1gt" sceneMemberID="viewController">
+                <viewController title="Ticket/Complaint" id="m9S-tc-1gt" customClass="FeedbackViewController" customModule="NWKTC_app_prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iLm-0K-noE"/>
                         <viewControllerLayoutGuide type="bottom" id="nA2-gs-Xpc"/>
@@ -694,7 +695,7 @@
                                         <rect key="frame" x="0.0" y="28" width="496" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tni-nY-K1z" id="hs6-t3-EnB">
-                                            <rect key="frame" x="0.0" y="0.0" width="496" height="299.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="496" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Apps and Gaming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-fK-70H">
@@ -738,9 +739,6 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="9v2-Y6-F8I" kind="show" id="9Se-hL-4aQ"/>
-                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rne-S1-9az">
                                 <rect key="frame" x="9" y="105" width="240" height="850"/>
@@ -754,7 +752,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zkv-UA-3VI">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Department" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKR-fo-N4U">
@@ -790,12 +788,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g4-7l-h6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="1404"/>
+            <point key="canvasLocation" x="663" y="1472"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JMI-qb-pU7">
             <objects>
-                <viewController title="Settings" id="8J8-MA-2hb" sceneMemberID="viewController">
+                <viewController title="Settings" id="8J8-MA-2hb" customClass="SettingsViewController" customModule="NWKTC_app_prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S1o-ww-hqH"/>
                         <viewControllerLayoutGuide type="bottom" id="1CG-ft-3em"/>
@@ -921,8 +919,8 @@
         <image name="nwktc" width="376" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Se-hL-4aQ"/>
-        <segue reference="CY6-01-YWm"/>
+        <segue reference="rHs-3c-NuL"/>
         <segue reference="HTs-rD-adC"/>
+        <segue reference="CY6-01-YWm"/>
     </inferredMetricsTieBreakers>
 </document>
