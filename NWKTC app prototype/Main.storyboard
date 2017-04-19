@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NWKTC_app_prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="NWKTC_app_prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="25.78125" y="689.6484375"/>
         </scene>
-        <!--View Controller-->
+        <!--SilentWitness-->
         <scene sceneID="NYW-k2-Yqp">
             <objects>
-                <viewController id="0AX-1E-trg" sceneMemberID="viewController">
+                <viewController title="SilentWitness" id="0AX-1E-trg" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kTh-YL-Ct9"/>
                         <viewControllerLayoutGuide type="bottom" id="o2G-z2-j4F"/>
@@ -231,6 +231,9 @@
                                 <state key="normal" title="Help">
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="iO9-AA-Kns" kind="show" id="Q2J-c4-5CH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0J2-7E-P2H">
                                 <rect key="frame" x="520" y="963" width="240" height="50"/>
@@ -686,14 +689,6 @@
                                     <segue destination="9v2-Y6-F8I" kind="show" id="XSa-M5-ph4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDn-GC-F64">
-                                <rect key="frame" x="382" y="976" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="iO9-AA-Kns" kind="show" id="bUz-j7-StC"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -845,7 +840,7 @@
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g2D-Zx-xiw" kind="show" id="MZs-Lp-fzg"/>
+                                    <segue destination="9v2-Y6-F8I" kind="show" id="oGD-P5-dPU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hs-RZ-SU0">
@@ -889,7 +884,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g4-7l-h6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1999" y="690"/>
+            <point key="canvasLocation" x="1957" y="690"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JMI-qb-pU7">
@@ -1020,8 +1015,8 @@
         <image name="nwktc" width="376" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Bh3-FU-qop"/>
+        <segue reference="sMd-EQ-zKi"/>
         <segue reference="NNW-Ki-uNr"/>
-        <segue reference="XSa-M5-ph4"/>
-        <segue reference="cDs-W4-NOk"/>
     </inferredMetricsTieBreakers>
 </document>
