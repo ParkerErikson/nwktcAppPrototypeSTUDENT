@@ -20,6 +20,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func myAccountBtn(_ sender: UIButton) {
+        print("Clicked")
+        performSegue(withIdentifier: "Settings", sender: self)
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

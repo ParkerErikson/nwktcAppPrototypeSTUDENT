@@ -176,7 +176,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ptx-iC-QFJ">
-                                <rect key="frame" x="8" y="105" width="240" height="850"/>
+                                <rect key="frame" x="8" y="105" width="240" height="840"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sectionCell" rowHeight="50" id="WZK-ag-DWa" customClass="SectionCells" customModule="NWKTC_app_prototype" customModuleProvider="target">
@@ -206,7 +206,7 @@
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5hv-mX-4kI">
-                                <rect key="frame" x="264" y="105" width="496" height="850"/>
+                                <rect key="frame" x="264" y="105" width="496" height="840"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selectedCell" rowHeight="300" id="v67-Fy-h1x" customClass="SelectedCells" customModule="NWKTC_app_prototype" customModuleProvider="target">
@@ -294,7 +294,7 @@
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8J8-MA-2hb" kind="show" id="s5Z-k7-Kg7"/>
+                                    <action selector="myAccountBtn:" destination="9v2-Y6-F8I" eventType="touchUpInside" id="Sfe-3M-h3K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJg-xZ-67N">
@@ -308,7 +308,7 @@
                         <color key="backgroundColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="WyT-VG-jVc" firstAttribute="width" secondItem="ptx-iC-QFJ" secondAttribute="width" id="0DG-Hb-WoS"/>
-                            <constraint firstItem="0J2-7E-P2H" firstAttribute="top" secondItem="5hv-mX-4kI" secondAttribute="bottom" constant="8" id="2Yp-iq-knf"/>
+                            <constraint firstItem="0J2-7E-P2H" firstAttribute="top" secondItem="5hv-mX-4kI" secondAttribute="bottom" constant="18" id="2Yp-iq-knf"/>
                             <constraint firstItem="WyT-VG-jVc" firstAttribute="leading" secondItem="SEy-Mx-wj9" secondAttribute="trailing" constant="16" id="3qZ-tm-z5r"/>
                             <constraint firstAttribute="trailing" secondItem="5hv-mX-4kI" secondAttribute="trailing" constant="8" id="483-jN-34d"/>
                             <constraint firstItem="5hv-mX-4kI" firstAttribute="leading" secondItem="ptx-iC-QFJ" secondAttribute="trailing" constant="16" id="4ib-AY-yUF"/>
@@ -330,8 +330,8 @@
                             <constraint firstItem="WyT-VG-jVc" firstAttribute="leading" secondItem="SEy-Mx-wj9" secondAttribute="trailing" constant="16" id="hjw-Sg-hWx"/>
                             <constraint firstItem="A4C-Xn-hzc" firstAttribute="top" secondItem="WyT-VG-jVc" secondAttribute="bottom" constant="11" id="iCZ-6k-h5J"/>
                             <constraint firstItem="0J2-7E-P2H" firstAttribute="leading" secondItem="WyT-VG-jVc" secondAttribute="trailing" constant="16" id="iyV-Oa-4Lw"/>
-                            <constraint firstItem="WyT-VG-jVc" firstAttribute="top" secondItem="5hv-mX-4kI" secondAttribute="bottom" constant="8" id="kf9-U8-fIm"/>
-                            <constraint firstItem="SEy-Mx-wj9" firstAttribute="top" secondItem="ptx-iC-QFJ" secondAttribute="bottom" constant="8" id="mHH-rI-T3A"/>
+                            <constraint firstItem="WyT-VG-jVc" firstAttribute="top" secondItem="5hv-mX-4kI" secondAttribute="bottom" constant="18" id="kf9-U8-fIm"/>
+                            <constraint firstItem="SEy-Mx-wj9" firstAttribute="top" secondItem="ptx-iC-QFJ" secondAttribute="bottom" constant="18" id="mHH-rI-T3A"/>
                             <constraint firstItem="RJg-xZ-67N" firstAttribute="top" secondItem="cLU-SV-jce" secondAttribute="bottom" constant="8" id="qRv-8e-rp3"/>
                             <constraint firstItem="ptx-iC-QFJ" firstAttribute="top" secondItem="RJg-xZ-67N" secondAttribute="bottom" constant="36" id="wh4-DA-jgj"/>
                             <constraint firstItem="WyT-VG-jVc" firstAttribute="height" secondItem="SEy-Mx-wj9" secondAttribute="height" id="xVI-j2-boC"/>
@@ -340,6 +340,7 @@
                     <connections>
                         <outlet property="sectionsTblView" destination="ptx-iC-QFJ" id="tvQ-4q-Kzm"/>
                         <outlet property="selectedTblView" destination="5hv-mX-4kI" id="67f-M4-VDS"/>
+                        <segue destination="8J8-MA-2hb" kind="show" identifier="Settings" id="Bzr-r0-q5Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pq3-Hn-Mth" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -645,7 +646,7 @@
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9v2-Y6-F8I" kind="show" id="Pjw-YC-e7D"/>
+                                    <action selector="cancleBtn:" destination="8J8-MA-2hb" eventType="touchUpInside" id="UeX-Ei-gek"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzo-g8-Eq1">
@@ -743,7 +744,6 @@
         <image name="nwktc" width="376" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pjw-YC-e7D"/>
         <segue reference="CY6-01-YWm"/>
     </inferredMetricsTieBreakers>
 </document>
