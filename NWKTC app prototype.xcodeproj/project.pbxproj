@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E4064C91EA91C6A0082E4CA /* HomeTableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4064C81EA91C6A0082E4CA /* HomeTableViews.swift */; };
-		4E91D7501EA7C032007CD972 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91D74F1EA7C032007CD972 /* SettingsViewController.swift */; };
-		4E91D7521EA7C05B007CD972 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91D7511EA7C05B007CD972 /* FeedbackViewController.swift */; };
-		4E91D7541EA7C097007CD972 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91D7531EA7C097007CD972 /* HomeViewController.swift */; };
+		4E336C8D1EA93AA00039A2F3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C821EA93AA00039A2F3 /* BaseViewController.swift */; };
+		4E336C8E1EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C831EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift */; };
+		4E336C8F1EA93AA00039A2F3 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C841EA93AA00039A2F3 /* FeedbackViewController.swift */; };
+		4E336C901EA93AA00039A2F3 /* HomeTableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */; };
+		4E336C911EA93AA00039A2F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C861EA93AA00039A2F3 /* HomeViewController.swift */; };
+		4E336C931EA93AA00039A2F3 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C881EA93AA00039A2F3 /* LoginScreen.swift */; };
+		4E336C951EA93AA00039A2F3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C8A1EA93AA00039A2F3 /* MenuViewController.swift */; };
+		4E336C961EA93AA00039A2F3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C8B1EA93AA00039A2F3 /* SettingsViewController.swift */; };
+		4E336C971EA93AA00039A2F3 /* SilentWitness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C8C1EA93AA00039A2F3 /* SilentWitness.swift */; };
+		4E336C991EA93AEE0039A2F3 /* Main 12-51-45-471.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E336C981EA93AEE0039A2F3 /* Main 12-51-45-471.storyboard */; };
 		7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6B1E9E868E005600CF /* AppDelegate.swift */; };
 		7371DC6E1E9E868E005600CF /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6D1E9E868E005600CF /* LoginScreen.swift */; };
 		7371DC731E9E868E005600CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC721E9E868E005600CF /* Assets.xcassets */; };
@@ -39,10 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E336C821EA93AA00039A2F3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4E336C831EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackSegmentsViewController.swift; sourceTree = "<group>"; };
+		4E336C841EA93AA00039A2F3 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViews.swift; sourceTree = "<group>"; };
+		4E336C861EA93AA00039A2F3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4E336C881EA93AA00039A2F3 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		4E336C8A1EA93AA00039A2F3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4E336C8B1EA93AA00039A2F3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4E336C8C1EA93AA00039A2F3 /* SilentWitness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilentWitness.swift; sourceTree = "<group>"; };
+		4E336C981EA93AEE0039A2F3 /* Main 12-51-45-471.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main 12-51-45-471.storyboard"; sourceTree = "<group>"; };
 		4E4064C81EA91C6A0082E4CA /* HomeTableViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViews.swift; sourceTree = "<group>"; };
-		4E91D74F1EA7C032007CD972 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		4E91D7511EA7C05B007CD972 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
-		4E91D7531EA7C097007CD972 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7371DC681E9E868E005600CF /* NWKTC app prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NWKTC app prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7371DC6B1E9E868E005600CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7371DC6D1E9E868E005600CF /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -109,7 +122,17 @@
 			children = (
 				73C0B17D1EA7C06E00521111 /* Parker VCs */,
 				7371DC6B1E9E868E005600CF /* AppDelegate.swift */,
+				4E336C981EA93AEE0039A2F3 /* Main 12-51-45-471.storyboard */,
 				73C0B17B1EA6A28B00521111 /* Main.storyboard */,
+				4E336C821EA93AA00039A2F3 /* BaseViewController.swift */,
+				4E336C831EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift */,
+				4E336C841EA93AA00039A2F3 /* FeedbackViewController.swift */,
+				4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */,
+				4E336C861EA93AA00039A2F3 /* HomeViewController.swift */,
+				4E336C881EA93AA00039A2F3 /* LoginScreen.swift */,
+				4E336C8A1EA93AA00039A2F3 /* MenuViewController.swift */,
+				4E336C8B1EA93AA00039A2F3 /* SettingsViewController.swift */,
+				4E336C8C1EA93AA00039A2F3 /* SilentWitness.swift */,
 				7371DC721E9E868E005600CF /* Assets.xcassets */,
 				7371DC741E9E868E005600CF /* LaunchScreen.storyboard */,
 				7371DC771E9E868E005600CF /* Info.plist */,
@@ -255,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E336C991EA93AEE0039A2F3 /* Main 12-51-45-471.storyboard in Resources */,
 				73C0B17C1EA6A28B00521111 /* Main.storyboard in Resources */,
 				7371DC761E9E868E005600CF /* LaunchScreen.storyboard in Resources */,
 				7371DC731E9E868E005600CF /* Assets.xcassets in Resources */,
@@ -282,8 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E336C8E1EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift in Sources */,
+				4E336C951EA93AA00039A2F3 /* MenuViewController.swift in Sources */,
+				4E336C971EA93AA00039A2F3 /* SilentWitness.swift in Sources */,
+				4E336C961EA93AA00039A2F3 /* SettingsViewController.swift in Sources */,
+				4E336C8F1EA93AA00039A2F3 /* FeedbackViewController.swift in Sources */,
+				4E336C931EA93AA00039A2F3 /* LoginScreen.swift in Sources */,
 				7371DC6E1E9E868E005600CF /* LoginScreen.swift in Sources */,
+				4E336C911EA93AA00039A2F3 /* HomeViewController.swift in Sources */,
+				4E336C8D1EA93AA00039A2F3 /* BaseViewController.swift in Sources */,
 				7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */,
+				4E336C901EA93AA00039A2F3 /* HomeTableViews.swift in Sources */,
 				73C0B1831EA7C0CA00521111 /* SilentWitness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
