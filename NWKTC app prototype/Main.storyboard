@@ -196,7 +196,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="sectionLbl" destination="RRl-7F-s4M" id="ET2-DZ-QZ9"/>
+                                            <outlet property="sectionLbl" destination="RRl-7F-s4M" id="6da-Ih-fIO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -255,7 +255,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="selectedLbl" destination="CGu-DH-Dpr" id="Njd-ft-JlX"/>
+                                            <outlet property="selectedLbl" destination="CGu-DH-Dpr" id="OGH-3t-VvG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -294,7 +294,7 @@
                                     <color key="titleColor" red="0.80784313730000001" green="0.066666666669999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="myAccountBtn:" destination="9v2-Y6-F8I" eventType="touchUpInside" id="Sfe-3M-h3K"/>
+                                    <segue destination="8J8-MA-2hb" kind="show" id="KQa-zh-ZCl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJg-xZ-67N">
@@ -340,12 +340,11 @@
                     <connections>
                         <outlet property="sectionsTblView" destination="ptx-iC-QFJ" id="tvQ-4q-Kzm"/>
                         <outlet property="selectedTblView" destination="5hv-mX-4kI" id="67f-M4-VDS"/>
-                        <segue destination="8J8-MA-2hb" kind="show" identifier="Settings" id="Bzr-r0-q5Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pq3-Hn-Mth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="662.5" y="689.6484375"/>
+            <point key="canvasLocation" x="866" y="690"/>
         </scene>
         <!--Ticket/Complaint-->
         <scene sceneID="4Vb-fv-4mt">

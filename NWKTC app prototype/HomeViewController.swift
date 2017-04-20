@@ -14,18 +14,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     lazy var sections = ["News","Admin", "Automotive Technology", "Business Technology", "Carpentry", "Collision Repair", "Computer Graphics Technology", "Cosmetology", "Crime Scene Investigation", "Kansas Institute of Diesel Technology", "Electrical Technology", "Engineering and Drafting Technology", "Medical Assistant", "Mobile App and Gaming", "Network Technology", "Precision Agriculture Technology", "Respiratory Therapy", "Welding"]
     
+    lazy var selectedSections = ["UpComming", "Department Info", "Contancts"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func myAccountBtn(_ sender: UIButton) {
-        print("Clicked")
-        performSegue(withIdentifier: "Settings", sender: self)
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
+        if (tableView == sectionsTblView) {
+            return 1
+        } else {
+            
+        }
+        
         return 1
     }
     
@@ -71,7 +74,5 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         } else {
             print("\(sections[indexPath.row])")
         }
-        
     }
-    
 }

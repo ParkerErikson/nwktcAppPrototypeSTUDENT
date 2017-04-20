@@ -8,7 +8,9 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    lazy var setting = ["Profile", "Brightness", "Text"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +27,20 @@ class SettingsViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return setting.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCells", for: indexPath)
+        
+        cell.textLabel?.text = setting[indexPath.row]
+        cell.textLabel?.textColor = #colorLiteral(red: 0.8532782197, green: 0.1581068337, blue: 0.194409132, alpha: 1)
+        cell.textLabel?.numberOfLines = 2
+        
+        return cell
+    }
+    
+    
+    
 }
