@@ -11,17 +11,21 @@ import UIKit
 class SilentWitness: UIViewController {
 
     
+    var confession : String?
+    
     @IBOutlet weak var silentConfession: UITextView!
     
     @IBOutlet weak var submitOutlet: UIButton!
     @IBAction func submit(_ sender: UIButton) {
-        
+        confession = silentConfession.text
+        submitOutlet.setTitle("Submitted", for: .normal)
+        submitOutlet.isEnabled = false
     }
     
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
+
     }
 
 }
