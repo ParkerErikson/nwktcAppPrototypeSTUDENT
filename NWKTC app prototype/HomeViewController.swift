@@ -50,9 +50,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "selectedCell", for: indexPath) as! SelectedCells
             
-            cell.textLabel?.text = "Pie"
-            cell.textLabel?.textColor = #colorLiteral(red: 0.8532782197, green: 0.1581068337, blue: 0.194409132, alpha: 1)
-            cell.textLabel?.numberOfLines = 2
+            cell.selectedLbl?.text = sections[indexPath.row]
+            cell.selectedLbl?.textColor = #colorLiteral(red: 0.8532782197, green: 0.1581068337, blue: 0.194409132, alpha: 1)
+            cell.selectedLbl?.numberOfLines = 2
             
             return cell
         }
@@ -64,7 +64,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         if (tableView == sectionsTblView) {
             print("\(sections[indexPath.row])")
         } else {
-            print("pie")
+            print("\(sections[indexPath.row])")
         }
         
     }
