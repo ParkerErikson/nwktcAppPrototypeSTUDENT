@@ -12,12 +12,13 @@
 		4E91D7521EA7C05B007CD972 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91D7511EA7C05B007CD972 /* FeedbackViewController.swift */; };
 		4E91D7541EA7C097007CD972 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91D7531EA7C097007CD972 /* HomeViewController.swift */; };
 		7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6B1E9E868E005600CF /* AppDelegate.swift */; };
-		7371DC6E1E9E868E005600CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6D1E9E868E005600CF /* ViewController.swift */; };
+		7371DC6E1E9E868E005600CF /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6D1E9E868E005600CF /* LoginScreen.swift */; };
 		7371DC731E9E868E005600CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC721E9E868E005600CF /* Assets.xcassets */; };
 		7371DC761E9E868E005600CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC741E9E868E005600CF /* LaunchScreen.storyboard */; };
 		7371DC811E9E868E005600CF /* NWKTC_app_prototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC801E9E868E005600CF /* NWKTC_app_prototypeTests.swift */; };
 		7371DC8C1E9E868E005600CF /* NWKTC_app_prototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC8B1E9E868E005600CF /* NWKTC_app_prototypeUITests.swift */; };
 		73C0B17C1EA6A28B00521111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C0B17B1EA6A28B00521111 /* Main.storyboard */; };
+		73C0B1831EA7C0CA00521111 /* SilentWitness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0B1821EA7C0CA00521111 /* SilentWitness.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 		4E91D7531EA7C097007CD972 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7371DC681E9E868E005600CF /* NWKTC app prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NWKTC app prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7371DC6B1E9E868E005600CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7371DC6D1E9E868E005600CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7371DC6D1E9E868E005600CF /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		7371DC721E9E868E005600CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7371DC751E9E868E005600CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7371DC771E9E868E005600CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		7371DC8B1E9E868E005600CF /* NWKTC_app_prototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWKTC_app_prototypeUITests.swift; sourceTree = "<group>"; };
 		7371DC8D1E9E868E005600CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73C0B17B1EA6A28B00521111 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		73C0B1821EA7C0CA00521111 /* SilentWitness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilentWitness.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +107,8 @@
 		7371DC6A1E9E868E005600CF /* NWKTC app prototype */ = {
 			isa = PBXGroup;
 			children = (
+				73C0B17D1EA7C06E00521111 /* Parker VCs */,
 				7371DC6B1E9E868E005600CF /* AppDelegate.swift */,
-				7371DC6D1E9E868E005600CF /* ViewController.swift */,
-				4E91D74F1EA7C032007CD972 /* SettingsViewController.swift */,
-				4E91D7511EA7C05B007CD972 /* FeedbackViewController.swift */,
-				4E91D7531EA7C097007CD972 /* HomeViewController.swift */,
 				73C0B17B1EA6A28B00521111 /* Main.storyboard */,
 				7371DC721E9E868E005600CF /* Assets.xcassets */,
 				7371DC741E9E868E005600CF /* LaunchScreen.storyboard */,
@@ -135,6 +134,15 @@
 				7371DC8D1E9E868E005600CF /* Info.plist */,
 			);
 			path = "NWKTC app prototypeUITests";
+			sourceTree = "<group>";
+		};
+		73C0B17D1EA7C06E00521111 /* Parker VCs */ = {
+			isa = PBXGroup;
+			children = (
+				7371DC6D1E9E868E005600CF /* LoginScreen.swift */,
+				73C0B1821EA7C0CA00521111 /* SilentWitness.swift */,
+			);
+			name = "Parker VCs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,12 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E91D7541EA7C097007CD972 /* HomeViewController.swift in Sources */,
-				7371DC6E1E9E868E005600CF /* ViewController.swift in Sources */,
+				7371DC6E1E9E868E005600CF /* LoginScreen.swift in Sources */,
 				7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */,
-				4E91D7501EA7C032007CD972 /* SettingsViewController.swift in Sources */,
-				4E4064C91EA91C6A0082E4CA /* HomeTableViews.swift in Sources */,
-				4E91D7521EA7C05B007CD972 /* FeedbackViewController.swift in Sources */,
+				73C0B1831EA7C0CA00521111 /* SilentWitness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
