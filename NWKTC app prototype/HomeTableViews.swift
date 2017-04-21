@@ -14,7 +14,20 @@ class SectionCells: UITableViewCell {
 }
 
 class SelectedCells: UITableViewCell {
+    @IBOutlet weak var selectedDesc: UITextView!
+    
     @IBOutlet weak var selectedLbl: UILabel!
+    
+    @IBOutlet weak var selectedImg: UIImageView!
+    
+    @IBOutlet weak var selectedInfo: UILabel!
+    
+    @IBOutlet weak var selectedContactNum: UILabel!
+    @IBOutlet weak var selectedContactName: UILabel!
+    
+    
     
     
 }
+
+
