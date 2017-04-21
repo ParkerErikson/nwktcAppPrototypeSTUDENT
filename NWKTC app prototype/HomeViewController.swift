@@ -85,6 +85,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     cell.selectedDesc.isHidden = true
                     cell.selectedLbl.text = "Department"
                     cell.selectedImg.image = #imageLiteral(resourceName: "Maverick-Mascot")
+                    cell.selectedDesc.text = "hi"
                     cell.selectedInfo.text = "Mobile Apps and Gaming"
                 case 1:
                     cell.selectedLbl.text = "UpComming"
