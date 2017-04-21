@@ -13,6 +13,8 @@
 		4E336C911EA93AA00039A2F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C861EA93AA00039A2F3 /* HomeViewController.swift */; };
 		4E336C961EA93AA00039A2F3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C8B1EA93AA00039A2F3 /* SettingsViewController.swift */; };
 		4E336C991EA93AEE0039A2F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E336C981EA93AEE0039A2F3 /* Main.storyboard */; };
+		4E516A081EAA5C6E00087BE7 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E516A071EAA5C6E00087BE7 /* Sections.swift */; };
+		4E516A0B1EAA5F5900087BE7 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E516A0A1EAA5F5900087BE7 /* Contacts.swift */; };
 		7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6B1E9E868E005600CF /* AppDelegate.swift */; };
 		7371DC6E1E9E868E005600CF /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6D1E9E868E005600CF /* LoginScreen.swift */; };
 		7371DC731E9E868E005600CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC721E9E868E005600CF /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		4E336C861EA93AA00039A2F3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E336C8B1EA93AA00039A2F3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4E336C981EA93AEE0039A2F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4E516A071EAA5C6E00087BE7 /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
+		4E516A0A1EAA5F5900087BE7 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		7371DC681E9E868E005600CF /* NWKTC app prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NWKTC app prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7371DC6B1E9E868E005600CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7371DC6D1E9E868E005600CF /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -89,13 +93,31 @@
 		4E336C9C1EA93F6A0039A2F3 /* Zachs VC */ = {
 			isa = PBXGroup;
 			children = (
-				4E336C841EA93AA00039A2F3 /* FeedbackViewController.swift */,
-				4E336C831EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift */,
-				4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */,
-				4E336C861EA93AA00039A2F3 /* HomeViewController.swift */,
+				4E516A091EAA5E5D00087BE7 /* Feedback */,
+				4E516A061EAA5C5400087BE7 /* Home Sections */,
 				4E336C8B1EA93AA00039A2F3 /* SettingsViewController.swift */,
 			);
 			name = "Zachs VC";
+			sourceTree = "<group>";
+		};
+		4E516A061EAA5C5400087BE7 /* Home Sections */ = {
+			isa = PBXGroup;
+			children = (
+				4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */,
+				4E336C861EA93AA00039A2F3 /* HomeViewController.swift */,
+				4E516A071EAA5C6E00087BE7 /* Sections.swift */,
+				4E516A0A1EAA5F5900087BE7 /* Contacts.swift */,
+			);
+			name = "Home Sections";
+			sourceTree = "<group>";
+		};
+		4E516A091EAA5E5D00087BE7 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				4E336C841EA93AA00039A2F3 /* FeedbackViewController.swift */,
+				4E336C831EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift */,
+			);
+			name = Feedback;
 			sourceTree = "<group>";
 		};
 		7371DC5F1E9E868E005600CF = {
@@ -300,9 +322,11 @@
 				4E336C961EA93AA00039A2F3 /* SettingsViewController.swift in Sources */,
 				4E336C8F1EA93AA00039A2F3 /* FeedbackViewController.swift in Sources */,
 				7371DC6E1E9E868E005600CF /* LoginScreen.swift in Sources */,
+				4E516A0B1EAA5F5900087BE7 /* Contacts.swift in Sources */,
 				4E336C911EA93AA00039A2F3 /* HomeViewController.swift in Sources */,
 				7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */,
 				4E336C901EA93AA00039A2F3 /* HomeTableViews.swift in Sources */,
+				4E516A081EAA5C6E00087BE7 /* Sections.swift in Sources */,
 				73C0B1831EA7C0CA00521111 /* SilentWitness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
