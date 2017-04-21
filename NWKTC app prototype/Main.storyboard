@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -219,10 +219,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sectionCell" rowHeight="50" id="WZK-ag-DWa" customClass="SectionCells" customModule="NWKTC_app_prototype" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="184" height="50"/>
+                                        <rect key="frame" x="0.0" y="28" width="240" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WZK-ag-DWa" id="hkl-cF-w6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="184" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-7F-s4M">
@@ -249,10 +249,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selectedCell" rowHeight="300" id="v67-Fy-h1x" customClass="SelectedCells" customModule="NWKTC_app_prototype" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="384" height="300"/>
+                                        <rect key="frame" x="0.0" y="28" width="496" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v67-Fy-h1x" id="hWV-4y-Ar0">
-                                            <rect key="frame" x="0.0" y="0.0" width="384" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="496" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGu-DH-Dpr">
@@ -287,9 +287,6 @@
                                                     <state key="normal" title="Feedback">
                                                         <color key="titleColor" cyan="0.0" magenta="1" yellow="1" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="m9S-tc-1gt" kind="show" id="UcU-zx-Mza"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq8-xK-n0J">
                                                     <rect key="frame" x="8" y="191" width="480" height="50"/>
@@ -306,15 +303,21 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8K3-tZ-bKN">
+                                                    <rect key="frame" x="8" y="66" width="480" height="117"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="selectedContactName" destination="nvM-0n-bYE" id="7ot-9N-F5Z"/>
-                                            <outlet property="selectedContactNum" destination="Ymd-Hs-djq" id="6gh-At-gGO"/>
-                                            <outlet property="selectedDesc" destination="X4m-gA-Udq" id="lS6-dm-Jo3"/>
-                                            <outlet property="selectedImg" destination="ZJg-TI-AHJ" id="AXW-yx-WcL"/>
-                                            <outlet property="selectedInfo" destination="bq8-xK-n0J" id="ix5-Zm-g6c"/>
-                                            <outlet property="selectedLbl" destination="CGu-DH-Dpr" id="OGH-3t-VvG"/>
+                                            <outlet property="contactImg" destination="ZJg-TI-AHJ" id="pZd-4p-o6s"/>
+                                            <outlet property="contactInfo" destination="bq8-xK-n0J" id="Kef-a3-jVx"/>
+                                            <outlet property="contactName" destination="nvM-0n-bYE" id="9c4-m3-byD"/>
+                                            <outlet property="contactNum" destination="Ymd-Hs-djq" id="EzY-qt-FJ1"/>
+                                            <outlet property="feedbackBtn" destination="UYj-j2-m6x" id="c1Y-4q-UIK"/>
+                                            <outlet property="mainDesc" destination="X4m-gA-Udq" id="9Vm-Li-d2F"/>
+                                            <outlet property="mainImg" destination="8K3-tZ-bKN" id="BQb-1c-nJB"/>
+                                            <outlet property="titleLbl" destination="CGu-DH-Dpr" id="qHE-kn-lXd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -802,6 +805,6 @@
         <image name="Primary-Logo-Light-Backgrounds" width="1080" height="199"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="flR-2S-0es"/>
+        <segue reference="CY6-01-YWm"/>
     </inferredMetricsTieBreakers>
 </document>
