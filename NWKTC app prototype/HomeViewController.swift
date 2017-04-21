@@ -12,6 +12,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var sectionsTblView: UITableView!
     @IBOutlet weak var selectedTblView: UITableView!
     
+    lazy var chosen = "News"
+    
+    var depDesc = DepartmentDescriptions()
     var hSections = HomeSections()
     var contacts = Contacts()
     
@@ -44,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if (tableView == sectionsTblView) {
             if (section == 0) {
-                return 1
+                return 2
             }
             if (section == 1) {
                 return hSections.secondSection.count
@@ -91,23 +94,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             if (tableView == selectedTblView) {
                 switch (indexPath.section) {
                 case 0:
+                    cell.feedbackBtn.isHidden = false
                     cell.contactNum.isHidden = true
                     cell.contactImg.isHidden = true
                     cell.mainDesc.isHidden = true
-                    cell.titleLbl.text = "Department"
+                    cell.titleLbl.text = "\(chosen)"
                     cell.mainImg.image = #imageLiteral(resourceName: "Maverick-Mascot")
-                    cell.contactInfo.text = "Mobile Apps and Gaming"
+                    cell.contactInfo.text = "\(chosen)"
                 case 1:
                     cell.contactNum.isHidden = true
                     cell.contactImg.isHidden = true
                     cell.contactInfo.isHidden = true
                     cell.mainImg.isHidden = true
                     cell.feedbackBtn.isHidden = true
-                    cell.titleLbl.text = "UpComming"
+                    cell.titleLbl.text = "UpComing"
                     cell.mainDesc.text = "Stuff and Things will be happening with more Stuff and Things to come by later"
                 case 2:
-                    cell.titleLbl.text = "Department Info"
-                    cell.mainDesc.text = "Learn how to develop apps in the rapidly expanding iPhone and iPad market. The iOS architecture is one of the fastest growing technology opportunities in modern history. The training received from our Mobile App and Entertainment Development program will enable you to create apps and games for the iPhone, iPod Touch, and iPad and to build cross-platform, mobile web-apps that will run on nearly any modern smart-phone and tablet platform including iPhone, Android, Blackberry, Windows Mobile and more."
+                    cell.feedbackBtn.isHidden = true
+                    cell.titleLbl.text = "\(chosen) Info"
+                    cell.mainDesc.text = "\(depDesc.mobileApps)"
                 case 3:
                     cell.mainDesc.isHidden = true
                     cell.feedbackBtn.isHidden = true
@@ -131,7 +136,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (tableView == sectionsTblView) {
-            print("\(hSections.sections[indexPath.row])")
+            if (indexPath.section == 0) {
+                chosen = "\(hSections.firstSection[indexPath.row])"
+                selectedTblView.reloadData()
+            }
+            if (indexPath.section == 1) {
+                chosen = "\(hSections.secondSection[indexPath.row])"
+                selectedTblView.reloadData()
+            }
         }
     }
 }
