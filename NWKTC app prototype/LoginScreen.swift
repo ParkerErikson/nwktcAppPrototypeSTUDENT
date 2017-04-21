@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginScreen: UIViewController {
-
+    
     
     
     @IBOutlet weak var username: UITextField!
@@ -20,17 +20,20 @@ class LoginScreen: UIViewController {
     @IBAction func login(_ sender: UIButton) {
         
     }
+    @IBAction func empower(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: "https://nwktc.empower-xl.com/fusebox.cfm")!, options: [:], completionHandler: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
-
-
+    
+    
 }
 
