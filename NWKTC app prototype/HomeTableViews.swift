@@ -14,20 +14,18 @@ class SectionCells: UITableViewCell {
 }
 
 class SelectedCells: UITableViewCell {
-    @IBOutlet weak var selectedDesc: UITextView!
     
-    @IBOutlet weak var selectedLbl: UILabel!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var mainImg: UIImageView!
     
-    @IBOutlet weak var selectedImg: UIImageView!
+    @IBOutlet weak var mainDesc: UITextView!
     
-    @IBOutlet weak var selectedInfo: UILabel!
+    @IBOutlet weak var contactInfo: UILabel!
+    @IBOutlet weak var contactName: UILabel!
+    @IBOutlet weak var contactNum: UILabel!
+    @IBOutlet weak var contactImg: UIImageView!
     
-    @IBOutlet weak var selectedContactNum: UILabel!
-    @IBOutlet weak var selectedContactName: UILabel!
-    
-    
-    
-    
+    @IBOutlet weak var feedbackBtn: UIButton!
 }
 
 
