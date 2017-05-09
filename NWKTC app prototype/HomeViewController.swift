@@ -12,7 +12,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var sectionsTblView: UITableView!
     @IBOutlet weak var selectedTblView: UITableView!
     
+    lazy var chosen = "News"
+    
+    var depDesc = DepartmentDescriptions()
     var hSections = HomeSections()
+    var contacts = Contacts()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,17 +45,28 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if (tableView == sectionsTblView) {
             if (section == 0) {
-                return 1
+                return 2
             }
-            return hSections.secondSection.count
+            if (section == 1) {
+                return hSections.secondSection.count
+            }
+            return hSections.sections.count
         }
         if (tableView == selectedTblView) {
-            return 1
+            if (section == 0) {
+                return 1
+            }
+            if (section == 1) {
+                return 1
+            }
+            if (section == 2) {
+                return 1
+            }
+            if (section == 3) {
+                return contacts.mobileInstructors.count
+            }
         }
-        else {
-            return 0
-        }
-        
+        return 0
     }
     
     
@@ -59,8 +74,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if (tableView == sectionsTblView) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell", for: indexPath) as! SectionCells
+            if (indexPath.section == 0) {
+                cell.textLabel?.text = hSections.firstSection[indexPath.row]
+            }
             
-            cell.textLabel?.text = hSections.sections[indexPath.row]
+            if (indexPath.section == 1) {
+                cell.textLabel?.text = hSections.secondSection[indexPath.row]
+            }
             cell.textLabel?.textColor = #colorLiteral(red: 0.8532782197, green: 0.1581068337, blue: 0.194409132, alpha: 1)
             cell.textLabel?.numberOfLines = 2
             
@@ -112,7 +132,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (tableView == sectionsTblView) {
-            print("\(hSections.sections[indexPath.row])")
+            if (indexPath.section == 0) {
+                chosen = "\(hSections.firstSection[indexPath.row])"
+                selectedTblView.reloadData()
+            }
+            if (indexPath.section == 1) {
+                chosen = "\(hSections.secondSection[indexPath.row])"
+                selectedTblView.reloadData()
+            }
         }
     }
 }
