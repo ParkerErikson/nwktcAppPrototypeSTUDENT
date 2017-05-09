@@ -50,8 +50,9 @@
                                     <constraint firstAttribute="height" constant="191" id="nZ5-xI-i91"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmS-h4-TXl">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HmS-h4-TXl">
                                 <rect key="frame" x="181" y="463" width="407" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moE-39-yDq">
                                         <rect key="frame" x="123" y="154" width="161" height="54"/>
@@ -82,10 +83,6 @@
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="407" id="G3c-hV-hLw"/>
-                                    <constraint firstAttribute="height" constant="260" id="xpR-9f-yGI"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-GJ-GEd">
                                 <rect key="frame" x="0.0" y="977" width="128" height="47"/>
@@ -105,15 +102,11 @@
                         <color key="backgroundColor" red="0.80784313725490198" green="0.066666666666666666" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r9v-Nf-o6Y" firstAttribute="centerX" secondItem="p4R-jk-rrC" secondAttribute="centerX" id="0AB-cH-93O"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HmS-h4-TXl" secondAttribute="bottom" constant="301" id="0pd-FA-VA0"/>
-                            <constraint firstItem="HmS-h4-TXl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="88f-sV-bpa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BRT-AQ-jcI" secondAttribute="bottom" id="AeE-Zc-Z0O"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hf0-GJ-GEd" secondAttribute="bottom" id="XqD-qh-337"/>
                             <constraint firstItem="hf0-GJ-GEd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zxs-st-4bd"/>
                             <constraint firstItem="p4R-jk-rrC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="h0p-OE-hdX"/>
                             <constraint firstAttribute="trailing" secondItem="BRT-AQ-jcI" secondAttribute="trailing" id="jd7-d0-ASX"/>
-                            <constraint firstItem="HmS-h4-TXl" firstAttribute="top" secondItem="r9v-Nf-o6Y" secondAttribute="bottom" constant="35" id="laR-kD-YcY"/>
-                            <constraint firstItem="HmS-h4-TXl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="181" id="ln3-td-VWo"/>
                             <constraint firstItem="r9v-Nf-o6Y" firstAttribute="top" secondItem="p4R-jk-rrC" secondAttribute="bottom" constant="27" id="sQJ-d6-68N"/>
                             <constraint firstAttribute="trailingMargin" secondItem="p4R-jk-rrC" secondAttribute="trailing" constant="72" id="tyw-sn-qO5"/>
                             <constraint firstItem="p4R-jk-rrC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="wbj-tb-FrY"/>
@@ -312,14 +305,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="contactImg" destination="ZJg-TI-AHJ" id="pZd-4p-o6s"/>
-                                            <outlet property="contactInfo" destination="bq8-xK-n0J" id="Kef-a3-jVx"/>
-                                            <outlet property="contactName" destination="nvM-0n-bYE" id="9c4-m3-byD"/>
-                                            <outlet property="contactNum" destination="Ymd-Hs-djq" id="EzY-qt-FJ1"/>
-                                            <outlet property="feedbackBtn" destination="UYj-j2-m6x" id="c1Y-4q-UIK"/>
-                                            <outlet property="mainDesc" destination="X4m-gA-Udq" id="9Vm-Li-d2F"/>
-                                            <outlet property="mainImg" destination="8K3-tZ-bKN" id="BQb-1c-nJB"/>
-                                            <outlet property="titleLbl" destination="CGu-DH-Dpr" id="qHE-kn-lXd"/>
+                                            <outlet property="contactImg" destination="ZJg-TI-AHJ" id="iG4-Bw-bkt"/>
+                                            <outlet property="contactInfo" destination="bq8-xK-n0J" id="6gW-l4-IJB"/>
+                                            <outlet property="contactName" destination="nvM-0n-bYE" id="uTC-Cm-guA"/>
+                                            <outlet property="contactNum" destination="Ymd-Hs-djq" id="9v7-sy-0DD"/>
+                                            <outlet property="feedbackBtn" destination="UYj-j2-m6x" id="NpQ-P0-bSt"/>
+                                            <outlet property="mainDesc" destination="X4m-gA-Udq" id="46N-j3-U8j"/>
+                                            <outlet property="mainImg" destination="8K3-tZ-bKN" id="k75-BK-Lga"/>
+                                            <outlet property="titleLbl" destination="CGu-DH-Dpr" id="8ND-w2-jx5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -672,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCi-9I-PSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="1335"/>
+            <point key="canvasLocation" x="675" y="1335"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JMI-qb-pU7">
