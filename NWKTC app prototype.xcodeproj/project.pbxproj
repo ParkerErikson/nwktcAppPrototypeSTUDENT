@@ -15,6 +15,8 @@
 		4E336C991EA93AEE0039A2F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E336C981EA93AEE0039A2F3 /* Main.storyboard */; };
 		4E516A081EAA5C6E00087BE7 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E516A071EAA5C6E00087BE7 /* Sections.swift */; };
 		4E516A0B1EAA5F5900087BE7 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E516A0A1EAA5F5900087BE7 /* Contacts.swift */; };
+		4EFF809A1EC20E49001D0A37 /* Departments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EFF80991EC20E49001D0A37 /* Departments.plist */; };
+		4EFF809E1EC22E5A001D0A37 /* Contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EFF809D1EC22E5A001D0A37 /* Contacts.plist */; };
 		7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6B1E9E868E005600CF /* AppDelegate.swift */; };
 		7371DC6E1E9E868E005600CF /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6D1E9E868E005600CF /* LoginScreen.swift */; };
 		7371DC731E9E868E005600CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7371DC721E9E868E005600CF /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		4E336C981EA93AEE0039A2F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E516A071EAA5C6E00087BE7 /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		4E516A0A1EAA5F5900087BE7 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		4EFF80991EC20E49001D0A37 /* Departments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Departments.plist; sourceTree = "<group>"; };
+		4EFF809D1EC22E5A001D0A37 /* Contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contacts.plist; sourceTree = "<group>"; };
 		7371DC681E9E868E005600CF /* NWKTC app prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NWKTC app prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7371DC6B1E9E868E005600CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7371DC6D1E9E868E005600CF /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E314D2A1EC23B5100FD211E /* PLists */ = {
+			isa = PBXGroup;
+			children = (
+				4EFF80991EC20E49001D0A37 /* Departments.plist */,
+				4EFF809D1EC22E5A001D0A37 /* Contacts.plist */,
+			);
+			name = PLists;
+			sourceTree = "<group>";
+		};
 		4E336C9C1EA93F6A0039A2F3 /* Zachs VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 		4E516A061EAA5C5400087BE7 /* Home Sections */ = {
 			isa = PBXGroup;
 			children = (
+				4E314D2A1EC23B5100FD211E /* PLists */,
 				4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */,
 				4E336C861EA93AA00039A2F3 /* HomeViewController.swift */,
 				4E516A071EAA5C6E00087BE7 /* Sections.swift */,
@@ -293,7 +307,9 @@
 			files = (
 				4E336C991EA93AEE0039A2F3 /* Main.storyboard in Resources */,
 				7371DC761E9E868E005600CF /* LaunchScreen.storyboard in Resources */,
+				4EFF809A1EC20E49001D0A37 /* Departments.plist in Resources */,
 				7371DC731E9E868E005600CF /* Assets.xcassets in Resources */,
+				4EFF809E1EC22E5A001D0A37 /* Contacts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

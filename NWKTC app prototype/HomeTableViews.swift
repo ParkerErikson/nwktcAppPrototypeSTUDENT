@@ -16,7 +16,7 @@ class SectionCells: UITableViewCell {
 class SelectedCells: UITableViewCell {
     
     @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var mainImg: UIImageView!
+    @IBOutlet weak var mainImg: UIImageView?
     
     @IBOutlet weak var mainDesc: UITextView!
     
