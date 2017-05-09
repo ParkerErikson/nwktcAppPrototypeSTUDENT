@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -82,6 +82,10 @@
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="407" id="G3c-hV-hLw"/>
+                                    <constraint firstAttribute="height" constant="260" id="xpR-9f-yGI"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-GJ-GEd">
                                 <rect key="frame" x="0.0" y="977" width="128" height="47"/>
@@ -310,6 +314,16 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contactImg" destination="ZJg-TI-AHJ" id="pZd-4p-o6s"/>
+                                            <outlet property="contactInfo" destination="bq8-xK-n0J" id="Kef-a3-jVx"/>
+                                            <outlet property="contactName" destination="nvM-0n-bYE" id="9c4-m3-byD"/>
+                                            <outlet property="contactNum" destination="Ymd-Hs-djq" id="EzY-qt-FJ1"/>
+                                            <outlet property="feedbackBtn" destination="UYj-j2-m6x" id="c1Y-4q-UIK"/>
+                                            <outlet property="mainDesc" destination="X4m-gA-Udq" id="9Vm-Li-d2F"/>
+                                            <outlet property="mainImg" destination="8K3-tZ-bKN" id="BQb-1c-nJB"/>
+                                            <outlet property="titleLbl" destination="CGu-DH-Dpr" id="qHE-kn-lXd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -522,14 +536,14 @@
                                     <constraint firstAttribute="width" constant="240" id="Vm1-Ch-BNn"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maverick-Mascot" translatesAutoresizingMaskIntoConstraints="NO" id="zFt-Dc-Jsv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NT-Badge_Black" translatesAutoresizingMaskIntoConstraints="NO" id="zFt-Dc-Jsv">
                                 <rect key="frame" x="508" y="597" width="240" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="9tD-Me-oQ4"/>
                                     <constraint firstAttribute="width" constant="240" id="I6x-h7-9vJ"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maverick-Mascot" translatesAutoresizingMaskIntoConstraints="NO" id="mZ5-QP-pwD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maverPhil" translatesAutoresizingMaskIntoConstraints="NO" id="mZ5-QP-pwD">
                                 <rect key="frame" x="264" y="597" width="240" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="7zR-BO-NN0"/>
@@ -793,9 +807,11 @@
     </scenes>
     <resources>
         <image name="Maverick-Mascot" width="106" height="108"/>
+        <image name="NT-Badge_Black" width="479" height="314"/>
         <image name="Primary-Logo-Light-Backgrounds" width="1080" height="199"/>
+        <image name="maverPhil" width="245" height="203"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CY6-01-YWm"/>
+        <segue reference="flR-2S-0es"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -20,6 +20,7 @@ class SilentWitness: UIViewController {
         confession = silentConfession.text
         submitOutlet.setTitle("Submitted", for: .normal)
         submitOutlet.isEnabled = false
+        silentConfession.isEditable = false
     }
     
     
