@@ -63,8 +63,7 @@
                                             <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZR-be-H3r"/>
-                                            <segue destination="9v2-Y6-F8I" kind="show" id="HSn-TS-l55"/>
+                                            <segue destination="9v2-Y6-F8I" kind="show" id="iYG-dy-Epr"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ito-UB-h9j">
@@ -117,7 +116,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginOutlet" destination="moE-39-yDq" id="Yg8-GX-mC5"/>
                         <outlet property="password" destination="ito-UB-h9j" id="I00-Qf-86j"/>
                         <outlet property="username" destination="c9v-hZ-iI6" id="h0g-Kf-qkM"/>
                     </connections>
@@ -138,7 +136,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9pE-Up-B3I">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="Type your message here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9pE-Up-B3I">
                                 <rect key="frame" x="239" y="316" width="290" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -200,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnA-BH-Buy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25.78125" y="1355.859375"/>
+            <point key="canvasLocation" x="26" y="1335"/>
         </scene>
         <!--Home-->
         <scene sceneID="CzB-yb-u9v">
@@ -219,10 +217,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sectionCell" rowHeight="50" id="WZK-ag-DWa" customClass="SectionCells" customModule="NWKTC_app_prototype" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="184" height="50"/>
+                                        <rect key="frame" x="0.0" y="28" width="240" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WZK-ag-DWa" id="hkl-cF-w6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="184" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-7F-s4M">
@@ -249,10 +247,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selectedCell" rowHeight="300" id="v67-Fy-h1x" customClass="SelectedCells" customModule="NWKTC_app_prototype" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="384" height="300"/>
+                                        <rect key="frame" x="0.0" y="28" width="496" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v67-Fy-h1x" id="hWV-4y-Ar0">
-                                            <rect key="frame" x="0.0" y="0.0" width="384" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="496" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGu-DH-Dpr">
@@ -299,7 +297,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-gA-Udq">
-                                                    <rect key="frame" x="8" y="66" width="480" height="175"/>
+                                                    <rect key="frame" x="8" y="71" width="480" height="175"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -308,14 +306,6 @@
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="selectedContactName" destination="nvM-0n-bYE" id="7ot-9N-F5Z"/>
-                                            <outlet property="selectedContactNum" destination="Ymd-Hs-djq" id="6gh-At-gGO"/>
-                                            <outlet property="selectedDesc" destination="X4m-gA-Udq" id="lS6-dm-Jo3"/>
-                                            <outlet property="selectedImg" destination="ZJg-TI-AHJ" id="AXW-yx-WcL"/>
-                                            <outlet property="selectedInfo" destination="bq8-xK-n0J" id="ix5-Zm-g6c"/>
-                                            <outlet property="selectedLbl" destination="CGu-DH-Dpr" id="OGH-3t-VvG"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -403,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pq3-Hn-Mth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865.625" y="689.6484375"/>
+            <point key="canvasLocation" x="663" y="690"/>
         </scene>
         <!--Ticket/Complaint-->
         <scene sceneID="4Vb-fv-4mt">
@@ -667,7 +657,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCi-9I-PSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="1356"/>
+            <point key="canvasLocation" x="663" y="1335"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JMI-qb-pU7">
@@ -794,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6O-gr-U4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="50"/>
+            <point key="canvasLocation" x="663" y="54"/>
         </scene>
     </scenes>
     <resources>
@@ -802,6 +792,6 @@
         <image name="Primary-Logo-Light-Backgrounds" width="1080" height="199"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="flR-2S-0es"/>
+        <segue reference="CY6-01-YWm"/>
     </inferredMetricsTieBreakers>
 </document>

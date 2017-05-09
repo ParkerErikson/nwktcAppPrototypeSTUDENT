@@ -16,8 +16,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -71,38 +69,38 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "selectedCell", for: indexPath) as! SelectedCells
             
-            if (tableView == selectedTblView) {
-                switch (indexPath.section) {
-                case 0:
-                    cell.contactNum.isHidden = true
-                    cell.contactImg.isHidden = true
-                    cell.mainDesc.isHidden = true
-                    cell.titleLbl.text = "Department"
-                    cell.mainImg.image = #imageLiteral(resourceName: "Maverick-Mascot")
-                    cell.contactInfo.text = "Mobile Apps and Gaming"
-                case 1:
-                    cell.contactNum.isHidden = true
-                    cell.contactImg.isHidden = true
-                    cell.contactInfo.isHidden = true
-                    cell.mainImg.isHidden = true
-                    cell.feedbackBtn.isHidden = true
-                    cell.titleLbl.text = "UpComming"
-                    cell.mainDesc.text = "Stuff and Things will be happening with more Stuff and Things to come by later"
-                case 2:
-                    cell.titleLbl.text = "Department Info"
-                    cell.mainDesc.text = "Learn how to develop apps in the rapidly expanding iPhone and iPad market. The iOS architecture is one of the fastest growing technology opportunities in modern history. The training received from our Mobile App and Entertainment Development program will enable you to create apps and games for the iPhone, iPod Touch, and iPad and to build cross-platform, mobile web-apps that will run on nearly any modern smart-phone and tablet platform including iPhone, Android, Blackberry, Windows Mobile and more."
-                case 3:
-                    cell.mainDesc.isHidden = true
-                    cell.feedbackBtn.isHidden = true
-                    cell.titleLbl.text = "Contacts"
-                    cell.contactImg.image = #imageLiteral(resourceName: "AndrewStrange")
-                    cell.contactName.text = "Andrew Strange"
-                    cell.contactNum.text = "(785)-890-1599"
-                    cell.contactInfo.text = "*Insert Chewbacca Sounds*"
-                default:
-                    cell.titleLbl.text = "Other"
-                }
-            }
+            //            if (tableView == selectedTblView) {
+            //                switch (indexPath.section) {
+            //                case 0:
+            ////                    cell.contactNum.isHidden = true
+            ////                    cell.contactImg.isHidden = true
+            ////                    cell.mainDesc.isHidden = true
+            ////                    cell.titleLbl.text = "Department"
+            ////                    cell.mainImg.image = #imageLiteral(resourceName: "Maverick-Mascot")
+            ////                    cell.contactInfo.text = "Mobile Apps and Gaming"
+            //                case 1:
+            ////                    cell.contactNum.isHidden = true
+            ////                    cell.contactImg.isHidden = true
+            ////                    cell.contactInfo.isHidden = true
+            ////                    cell.mainImg.isHidden = true
+            ////                    cell.feedbackBtn.isHidden = true
+            ////                    cell.titleLbl.text = "UpComming"
+            ////                    cell.mainDesc.text = "Stuff and Things will be happening with more Stuff and Things to come by later"
+            //                case 2:
+            //                    cell.titleLbl.text = "Department Info"
+            //                    cell.mainDesc.text = "Learn how to develop apps in the rapidly expanding iPhone and iPad market. The iOS architecture is one of the fastest growing technology opportunities in modern history. The training received from our Mobile App and Entertainment Development program will enable you to create apps and games for the iPhone, iPod Touch, and iPad and to build cross-platform, mobile web-apps that will run on nearly any modern smart-phone and tablet platform including iPhone, Android, Blackberry, Windows Mobile and more."
+            //                case 3:
+            //                    cell.mainDesc.isHidden = true
+            //                    cell.feedbackBtn.isHidden = true
+            //                    cell.titleLbl.text = "Contacts"
+            //                    cell.contactImg.image = #imageLiteral(resourceName: "AndrewStrange")
+            //                    cell.contactName.text = "Andrew Strange"
+            //                    cell.contactNum.text = "(785)-890-1599"
+            //                    cell.contactInfo.text = "*Insert Chewbacca Sounds*"
+            //                default:
+            //                    cell.titleLbl.text = "Other"
+            //                }
+            //}
             
             cell.titleLbl?.textColor = #colorLiteral(red: 0.8532782197, green: 0.1581068337, blue: 0.194409132, alpha: 1)
             
