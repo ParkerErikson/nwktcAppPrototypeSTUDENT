@@ -63,8 +63,7 @@
                                             <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZR-be-H3r"/>
-                                            <segue destination="9v2-Y6-F8I" kind="show" id="HSn-TS-l55"/>
+                                            <segue destination="9v2-Y6-F8I" kind="show" id="iYG-dy-Epr"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ito-UB-h9j">
@@ -117,7 +116,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginOutlet" destination="moE-39-yDq" id="Yg8-GX-mC5"/>
                         <outlet property="password" destination="ito-UB-h9j" id="I00-Qf-86j"/>
                         <outlet property="username" destination="c9v-hZ-iI6" id="h0g-Kf-qkM"/>
                     </connections>
@@ -138,7 +136,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9pE-Up-B3I">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="Type your message here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9pE-Up-B3I">
                                 <rect key="frame" x="239" y="316" width="290" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -200,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnA-BH-Buy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25.78125" y="1355.859375"/>
+            <point key="canvasLocation" x="26" y="1335"/>
         </scene>
         <!--Home-->
         <scene sceneID="CzB-yb-u9v">
@@ -288,7 +286,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-gA-Udq">
-                                                    <rect key="frame" x="8" y="66" width="480" height="175"/>
+                                                    <rect key="frame" x="8" y="71" width="480" height="175"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" cyan="0.0" magenta="1" yellow="1" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -312,16 +310,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="contactImg" destination="ZJg-TI-AHJ" id="pZd-4p-o6s"/>
-                                            <outlet property="contactInfo" destination="bq8-xK-n0J" id="Kef-a3-jVx"/>
-                                            <outlet property="contactName" destination="nvM-0n-bYE" id="9c4-m3-byD"/>
-                                            <outlet property="contactNum" destination="Ymd-Hs-djq" id="EzY-qt-FJ1"/>
-                                            <outlet property="feedbackBtn" destination="UYj-j2-m6x" id="c1Y-4q-UIK"/>
-                                            <outlet property="mainDesc" destination="X4m-gA-Udq" id="9Vm-Li-d2F"/>
-                                            <outlet property="mainImg" destination="8K3-tZ-bKN" id="BQb-1c-nJB"/>
-                                            <outlet property="titleLbl" destination="CGu-DH-Dpr" id="qHE-kn-lXd"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -409,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pq3-Hn-Mth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865.625" y="689.6484375"/>
+            <point key="canvasLocation" x="663" y="690"/>
         </scene>
         <!--Ticket/Complaint-->
         <scene sceneID="4Vb-fv-4mt">
@@ -673,7 +661,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCi-9I-PSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="1356"/>
+            <point key="canvasLocation" x="663" y="1335"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JMI-qb-pU7">
@@ -800,7 +788,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6O-gr-U4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="50"/>
+            <point key="canvasLocation" x="663" y="54"/>
         </scene>
     </scenes>
     <resources>
