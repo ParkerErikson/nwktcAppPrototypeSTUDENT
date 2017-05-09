@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Department</key>
+		<string>Automotive Technology</string>
+		<key>Name</key>
+		<string>Jim Kennedy</string>
+		<key>Number</key>
+		<string>(785)890-1523</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Business Technology</string>
+		<key>Name</key>
+		<string>Jeremy Johnston</string>
+		<key>Number</key>
+		<string>(785)890-1528</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Carpentry</string>
+		<key>Name</key>
+		<string>Robert Woodrow</string>
+		<key>Number</key>
+		<string>(785)890-1544</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Collision Repair</string>
+		<key>Name</key>
+		<string>Randy Selbe</string>
+		<key>Number</key>
+		<string>(785)890-1591</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Computer Graphics Technology</string>
+		<key>Name</key>
+		<string>Ian Tompkins</string>
+		<key>Number</key>
+		<string>(785)890-1597</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Cosmetology</string>
+		<key>Name</key>
+		<string>Christa Bergsma</string>
+		<key>Number</key>
+		<string>(785)890-1556</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Crime Scene Investigation</string>
+		<key>Name</key>
+		<string>Jason Showalter</string>
+		<key>Number</key>
+		<string>(785)890-1584</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Electrical Technology</string>
+		<key>Name</key>
+		<string>Rob Loftin</string>
+		<key>Number</key>
+		<string>(785)890-1538</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Engineering &amp; Drafting Technology</string>
+		<key>Name</key>
+		<string>Aaron Wolfe</string>
+		<key>Number</key>
+		<string>(785)890-1542</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Kansas Institute of Diesel Technology</string>
+		<key>Name</key>
+		<string>Jason Cook</string>
+		<key>Number</key>
+		<string>(785)890-1562</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Medical Assistant</string>
+		<key>Name</key>
+		<string>Lois Seibert</string>
+		<key>Number</key>
+		<string>(785)890-1587</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Mobile Application &amp; Gaming</string>
+		<key>Name</key>
+		<string>Jeremy Skrdlant</string>
+		<key>Number</key>
+		<string>(785)890-1532</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Network Technology</string>
+		<key>Name</key>
+		<string>Scott Waugh</string>
+		<key>Number</key>
+		<string>(785)890-1569</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Precision Agriculture Technology</string>
+		<key>Name</key>
+		<string>Weston McCary</string>
+		<key>Number</key>
+		<string>(785)890-3641</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Respiratory Therapy</string>
+		<key>Name</key>
+		<string>Carrie Whitcomb</string>
+		<key>Number</key>
+		<string>(785)890-1581</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>Department</key>
+		<string>Welding</string>
+		<key>Name</key>
+		<string>Ben Lacy</string>
+		<key>Number</key>
+		<string>(785)890-1576</string>
+		<key>Brief Description</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
