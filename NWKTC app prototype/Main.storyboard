@@ -304,12 +304,19 @@
                                                     <state key="normal" title="Feedback">
                                                         <color key="titleColor" cyan="0.0" magenta="1" yellow="1" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="m9S-tc-1gt" kind="show" id="14v-If-3aZ"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contactImg" destination="ZJg-TI-AHJ" id="iG4-Bw-bkt"/>
+                                            <outlet property="contactInfo" destination="bq8-xK-n0J" id="6gW-l4-IJB"/>
+                                            <outlet property="contactName" destination="nvM-0n-bYE" id="uTC-Cm-guA"/>
+                                            <outlet property="contactNum" destination="Ymd-Hs-djq" id="9v7-sy-0DD"/>
+                                            <outlet property="feedbackBtn" destination="UYj-j2-m6x" id="NpQ-P0-bSt"/>
+                                            <outlet property="mainDesc" destination="X4m-gA-Udq" id="46N-j3-U8j"/>
+                                            <outlet property="mainImg" destination="8K3-tZ-bKN" id="k75-BK-Lga"/>
+                                            <outlet property="titleLbl" destination="CGu-DH-Dpr" id="8ND-w2-jx5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -726,7 +733,7 @@
                                         <rect key="frame" x="0.0" y="28" width="750" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8D7-0c-Dxw" id="REP-O1-Sjd">
-                                            <rect key="frame" x="0.0" y="0.0" width="750" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="750" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asd-Oz-I4W">
