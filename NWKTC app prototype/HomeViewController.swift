@@ -8,30 +8,40 @@
 
 import UIKit
 
-class HomeViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var sectionsTblView: UITableView!
     @IBOutlet weak var selectedTblView: UITableView!
     
-    
-    lazy var chosen = "News"
     lazy var selectedDepartments = [String:String]()
     lazy var selectedDepContacts = [String:String]()
     var information = [[String:String]]()
     var contactInfo = [[String:String]]()
     
     var hSections = HomeSections()
-    var contacts = Contacts()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let data = getInfoFromPlist(named: "Departments") as! [[String:String]]
-            information = data
+        information = data
         
         let cInfo = getInfoFromPlist(named: "Contacts") as! [[String:String]]
         contactInfo = cInfo
         
+        
         // Do any additional setup after loading the view.
+    }
+    @IBAction func toFeedbackBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "Feedback", sender: self)
+    }
+    
+    @IBAction func logoutBtn(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func accountSettings(_ sender: UIButton) {
+        performSegue(withIdentifier: "Settings", sender: self)
     }
     
     
@@ -60,24 +70,18 @@ class HomeViewController: UIViewController ,UITableViewDelegate, UITableViewData
     func numberOfSections(in tableView: UITableView) -> Int {
         if (tableView == sectionsTblView) {
             return hSections.sectionGroups.count
-        } else
-        if (tableView == selectedTblView) {
-            return hSections.selectedSections.count
-        } else {
-            return 0
         }
+        return 1
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if (tableView == sectionsTblView) {
             return hSections.sectionGroups[section]
-        } else {
-            return hSections.selectedSections[section]
         }
+        return "Department"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         if (tableView == sectionsTblView) {
             if (section == 0) {
                 return 2
@@ -87,22 +91,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate, UITableViewData
             }
             return information.count
         }
-        if (tableView == selectedTblView) {
-            if (section == 0) {
-                return 1
-            }
-            if (section == 1) {
-                return 1
-            }
-            if (section == 2) {
-                return 1
-            }
-            if (section == 3) {
-                // MARK: Need to change to instructor amount
-                return selectedDepContacts.count
-            }
-        }
-        return 0
+        return 4
     }
     
     
@@ -111,6 +100,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate, UITableViewData
         let info = selectedDepartments
         let contactInfo = selectedDepContacts
         
+        //Sections to the Side
         if (tableView == sectionsTblView) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell", for: indexPath) as! SectionCells
             if (indexPath.section == 0) {
@@ -125,44 +115,31 @@ class HomeViewController: UIViewController ,UITableViewDelegate, UITableViewData
             
             return cell
         }
+        
+        
+        //Selected Sections
+        
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath) as! titleCell
+            cell.titleCell.text = "\(info["Department"] ?? "No Department")"
+            cell.titleImage?.image = UIImage(named: "\(info["Image"] ?? "No Image")")
+            return cell
+        }
+        else if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath) as! NewsCell
+            cell.newsTF.text = "\(info["UpComing"] ?? "No UpComing")"
+            return cell
+        } else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionCell", for: indexPath) as! DescriptionCell
+            cell.descriptionTF.text = "\(info["DepartmentInfo"] ?? "No Department Info")"
+            return cell
+        }
         else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "selectedCell", for: indexPath) as! SelectedCells
-
-            if (tableView == selectedTblView) {
-                switch (indexPath.section) {
-                case 0:
-                    cell.feedbackBtn.isHidden = false
-                    cell.contactNum.isHidden = true
-                    cell.contactImg.isHidden = true
-                    cell.contactInfo.isHidden = true
-                    cell.mainDesc.isHidden = true
-                    cell.titleLbl.text = "\(info["Department"] ?? "No Department")"
-                    cell.mainImg?.image = UIImage(named: "\(info["Image"] ?? "No Image")")
-                case 1:
-                    cell.contactNum.isHidden = true
-                    cell.contactImg.isHidden = true
-                    cell.contactInfo.isHidden = true
-                    cell.mainImg?.isHidden = true
-                    cell.feedbackBtn.isHidden = true
-                    cell.titleLbl.text = "UpComing"
-                    cell.mainDesc.text = "\(info["UpComing"] ?? "No UpComing")"
-                case 2:
-                    cell.feedbackBtn.isHidden = true
-                    cell.titleLbl.text = "Description"
-                    cell.mainDesc.text = "\(info["DepartmentInfo"] ?? "No Department Info")"
-                case 3:
-                    cell.mainDesc.isHidden = true
-                    cell.feedbackBtn.isHidden = true
-                    cell.titleLbl.text = "Contacts"
-                    cell.contactImg.image = UIImage(named: "\(contactInfo["Name"] ?? "No Image")")
-                    cell.contactName.text = "\(contactInfo["Name"] ?? "No Name")"
-                    cell.contactNum.text = "\(contactInfo["Number"] ?? "No Number")"
-                    cell.contactInfo.text = "\(contactInfo["Brief Description"] ?? "No Description")"
-                default:
-                    cell.titleLbl.text = "Other"
-                }
-            }
-            cell.titleLbl?.textColor = #colorLiteral(red: 0.8532782197, green: 0.1581068337, blue: 0.194409132, alpha: 1)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsCell
+            cell.contactImg.image = UIImage(named: "\(contactInfo["Name"] ?? "No Image for Contact")")
+            cell.contactName.text = "\(contactInfo["Name"] ?? "No Contact Name")"
+            cell.contactNumber.text = "\(contactInfo["Number"] ?? "No Contact Number")"
+            
             return cell
         }
     }

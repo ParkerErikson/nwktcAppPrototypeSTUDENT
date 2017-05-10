@@ -1,27 +1,24 @@
 //
-//  FeedbackViewController.swift
+//  NewsViewController.swift
 //  NWKTC app prototype
 //
-//  Created by Zachary White on 4/19/17.
+//  Created by Zachary White on 5/10/17.
 //  Copyright © 2017 Parker Erikson. All rights reserved.
 //
 
 import UIKit
-//FAQ ViewController
-class FeedbackViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    //Frequently Asked Questions, Question/Answer
-    var FAQQA = [[String:String]]()
-    @IBOutlet weak var FAQTblView: UITableView!
-    
-    @IBOutlet weak var seperateSegments: UISegmentedControl!
+
+class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    lazy var selectedDepartments = [String:String]()
+    var information = [[String:String]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let faq = getInfoFromPlist(named: "FAQ") as! [[String:String]]
-        FAQQA = faq
+        let data = getInfoFromPlist(named: "Departments") as! [[String:String]]
+        information = data
+        // Do any additional setup after loading the view.
     }
+    
     
     func getInfoFromPlist(named : String) -> Any? {
         //Reading From a Plist
@@ -45,28 +42,23 @@ class FeedbackViewController: UIViewController, UITableViewDataSource, UITableVi
         return nil
     }
     
-    @IBAction func cancleBtn(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FAQQA.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FAQCells", for: indexPath) as! FAQCell
-        cell.answerTV.text = "Works?"
-        cell.questionTitle.text = "Stuff"
+        let info = selectedDepartments
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath) as! NewsCell
+        cell.newsTF.text = "\(info["UpComing"] ?? "No UpComing")"
         return cell
     }
     
 }
 
-class FAQCell: UITableViewCell {
-    @IBOutlet weak var questionTitle: UILabel!
-    @IBOutlet weak var answerTV: UITextView!
+class NewsCell : UITableViewCell {
+    @IBOutlet weak var newsTF: UITextView!
 }

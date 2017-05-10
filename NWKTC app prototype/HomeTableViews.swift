@@ -13,19 +13,27 @@ class SectionCells: UITableViewCell {
     
 }
 
-class SelectedCells: UITableViewCell {
-    
-    @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var mainImg: UIImageView?
-    
-    @IBOutlet weak var mainDesc: UITextView!
-    
-    @IBOutlet weak var contactInfo: UILabel!
-    @IBOutlet weak var contactName: UILabel!
-    @IBOutlet weak var contactNum: UILabel!
-    @IBOutlet weak var contactImg: UIImageView!
-    
+class titleCell : UITableViewCell {
+    @IBOutlet weak var titleImage: UIImageView!
+    @IBOutlet weak var titleCell: UILabel!
     @IBOutlet weak var feedbackBtn: UIButton!
+
+    
+}
+
+class NewsCell : UITableViewCell {
+    @IBOutlet weak var newsTF: UITextView!
+    
+}
+
+class DescriptionCell: UITableViewCell {
+    @IBOutlet weak var descriptionTF: UITextView!
+}
+
+class ContactsCell: UITableViewCell {
+    @IBOutlet weak var contactImg: UIImageView!
+    @IBOutlet weak var contactName: UILabel!
+    @IBOutlet weak var contactNumber: UILabel!
 }
 
 

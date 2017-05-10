@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E336C8E1EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C831EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift */; };
 		4E336C8F1EA93AA00039A2F3 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C841EA93AA00039A2F3 /* FeedbackViewController.swift */; };
 		4E336C901EA93AA00039A2F3 /* HomeTableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */; };
 		4E336C911EA93AA00039A2F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C861EA93AA00039A2F3 /* HomeViewController.swift */; };
 		4E336C961EA93AA00039A2F3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336C8B1EA93AA00039A2F3 /* SettingsViewController.swift */; };
 		4E336C991EA93AEE0039A2F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E336C981EA93AEE0039A2F3 /* Main.storyboard */; };
 		4E516A081EAA5C6E00087BE7 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E516A071EAA5C6E00087BE7 /* Sections.swift */; };
-		4E516A0B1EAA5F5900087BE7 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E516A0A1EAA5F5900087BE7 /* Contacts.swift */; };
+		4EF173691EC36A5800A44F55 /* FAQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EF173681EC36A5800A44F55 /* FAQ.plist */; };
 		4EFF809A1EC20E49001D0A37 /* Departments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EFF80991EC20E49001D0A37 /* Departments.plist */; };
 		4EFF809E1EC22E5A001D0A37 /* Contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EFF809D1EC22E5A001D0A37 /* Contacts.plist */; };
 		7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7371DC6B1E9E868E005600CF /* AppDelegate.swift */; };
@@ -44,14 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E336C831EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackSegmentsViewController.swift; sourceTree = "<group>"; };
 		4E336C841EA93AA00039A2F3 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViews.swift; sourceTree = "<group>"; };
 		4E336C861EA93AA00039A2F3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E336C8B1EA93AA00039A2F3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4E336C981EA93AEE0039A2F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E516A071EAA5C6E00087BE7 /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
-		4E516A0A1EAA5F5900087BE7 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		4EF173681EC36A5800A44F55 /* FAQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FAQ.plist; sourceTree = "<group>"; };
 		4EFF80991EC20E49001D0A37 /* Departments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Departments.plist; sourceTree = "<group>"; };
 		4EFF809D1EC22E5A001D0A37 /* Contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contacts.plist; sourceTree = "<group>"; };
 		7371DC681E9E868E005600CF /* NWKTC app prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NWKTC app prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,8 +97,17 @@
 			children = (
 				4EFF80991EC20E49001D0A37 /* Departments.plist */,
 				4EFF809D1EC22E5A001D0A37 /* Contacts.plist */,
+				4EF173681EC36A5800A44F55 /* FAQ.plist */,
 			);
 			name = PLists;
+			sourceTree = "<group>";
+		};
+		4E314D2B1EC247B000FD211E /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */,
+			);
+			name = TableCells;
 			sourceTree = "<group>";
 		};
 		4E336C9C1EA93F6A0039A2F3 /* Zachs VC */ = {
@@ -116,11 +123,10 @@
 		4E516A061EAA5C5400087BE7 /* Home Sections */ = {
 			isa = PBXGroup;
 			children = (
+				4E314D2B1EC247B000FD211E /* TableCells */,
 				4E314D2A1EC23B5100FD211E /* PLists */,
-				4E336C851EA93AA00039A2F3 /* HomeTableViews.swift */,
 				4E336C861EA93AA00039A2F3 /* HomeViewController.swift */,
 				4E516A071EAA5C6E00087BE7 /* Sections.swift */,
-				4E516A0A1EAA5F5900087BE7 /* Contacts.swift */,
 			);
 			name = "Home Sections";
 			sourceTree = "<group>";
@@ -129,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				4E336C841EA93AA00039A2F3 /* FeedbackViewController.swift */,
-				4E336C831EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift */,
 			);
 			name = Feedback;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				4EFF809A1EC20E49001D0A37 /* Departments.plist in Resources */,
 				7371DC731E9E868E005600CF /* Assets.xcassets in Resources */,
 				4EFF809E1EC22E5A001D0A37 /* Contacts.plist in Resources */,
+				4EF173691EC36A5800A44F55 /* FAQ.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,11 +340,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E336C8E1EA93AA00039A2F3 /* FeedbackSegmentsViewController.swift in Sources */,
 				4E336C961EA93AA00039A2F3 /* SettingsViewController.swift in Sources */,
 				4E336C8F1EA93AA00039A2F3 /* FeedbackViewController.swift in Sources */,
 				7371DC6E1E9E868E005600CF /* LoginScreen.swift in Sources */,
-				4E516A0B1EAA5F5900087BE7 /* Contacts.swift in Sources */,
 				4E336C911EA93AA00039A2F3 /* HomeViewController.swift in Sources */,
 				7371DC6C1E9E868E005600CF /* AppDelegate.swift in Sources */,
 				4E336C901EA93AA00039A2F3 /* HomeTableViews.swift in Sources */,
