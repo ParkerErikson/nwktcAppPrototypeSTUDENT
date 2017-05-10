@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,8 +50,9 @@
                                     <constraint firstAttribute="height" constant="191" id="nZ5-xI-i91"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmS-h4-TXl">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HmS-h4-TXl">
                                 <rect key="frame" x="181" y="463" width="407" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moE-39-yDq">
                                         <rect key="frame" x="123" y="154" width="161" height="54"/>
@@ -101,15 +102,11 @@
                         <color key="backgroundColor" red="0.80784313725490198" green="0.066666666666666666" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r9v-Nf-o6Y" firstAttribute="centerX" secondItem="p4R-jk-rrC" secondAttribute="centerX" id="0AB-cH-93O"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HmS-h4-TXl" secondAttribute="bottom" constant="301" id="0pd-FA-VA0"/>
-                            <constraint firstItem="HmS-h4-TXl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="88f-sV-bpa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BRT-AQ-jcI" secondAttribute="bottom" id="AeE-Zc-Z0O"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hf0-GJ-GEd" secondAttribute="bottom" id="XqD-qh-337"/>
                             <constraint firstItem="hf0-GJ-GEd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zxs-st-4bd"/>
                             <constraint firstItem="p4R-jk-rrC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="h0p-OE-hdX"/>
                             <constraint firstAttribute="trailing" secondItem="BRT-AQ-jcI" secondAttribute="trailing" id="jd7-d0-ASX"/>
-                            <constraint firstItem="HmS-h4-TXl" firstAttribute="top" secondItem="r9v-Nf-o6Y" secondAttribute="bottom" constant="35" id="laR-kD-YcY"/>
-                            <constraint firstItem="HmS-h4-TXl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="181" id="ln3-td-VWo"/>
                             <constraint firstItem="r9v-Nf-o6Y" firstAttribute="top" secondItem="p4R-jk-rrC" secondAttribute="bottom" constant="27" id="sQJ-d6-68N"/>
                             <constraint firstAttribute="trailingMargin" secondItem="p4R-jk-rrC" secondAttribute="trailing" constant="72" id="tyw-sn-qO5"/>
                             <constraint firstItem="p4R-jk-rrC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="wbj-tb-FrY"/>
@@ -732,6 +729,8 @@
     </scenes>
     <resources>
         <image name="Maverick-Mascot" width="106" height="108"/>
+        <image name="NT-Badge_Black" width="479" height="314"/>
         <image name="Primary-Logo-Light-Backgrounds" width="1080" height="199"/>
+        <image name="maverPhil" width="245" height="203"/>
     </resources>
 </document>
