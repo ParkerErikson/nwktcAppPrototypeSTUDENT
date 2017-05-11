@@ -500,6 +500,7 @@
                                     <segment title="Ticket"/>
                                     <segment title="Help"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rn5-R9-gcT">
                                 <rect key="frame" x="598" y="929" width="150" height="75"/>
@@ -729,8 +730,6 @@
     </scenes>
     <resources>
         <image name="Maverick-Mascot" width="106" height="108"/>
-        <image name="NT-Badge_Black" width="479" height="314"/>
         <image name="Primary-Logo-Light-Backgrounds" width="1080" height="199"/>
-        <image name="maverPhil" width="245" height="203"/>
     </resources>
 </document>
